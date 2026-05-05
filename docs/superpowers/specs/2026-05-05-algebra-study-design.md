@@ -30,6 +30,8 @@ js/
   calculator.js         ← Desmos API embed + slide-out panel logic
 ```
 
+`index.html` handles save-code entry/generation and redirects to `app.html#home` once a code is active.
+
 ---
 
 ## Curriculum — 9 Units
@@ -110,15 +112,17 @@ Each topic has three modes, accessible from the topic detail screen.
 - Flip animation on click.
 - "Got It" / "Still Learning" buttons to self-rate.
 - Deck shuffles automatically.
+- **6–10 flashcards per topic.**
 
 ### Solve Problems
 - Mix of multiple-choice and fill-in-the-blank questions.
-- 8–12 problems per topic.
+- **8–12 problems per topic.**
+- **Answer normalization:** fill-in-the-blank answers strip whitespace, ignore case, and accept equivalent forms (e.g. `x=5`, `x = 5`, and `5` all accepted when the answer is x = 5). Checked via a normalize function in `practice.js`.
 - **On wrong answer:** a step-by-step worked solution panel slides in. Shows each step of the correct solution, highlights where the error likely occurred, and offers a "Try Again" button.
 - On correct answer: green flash + confetti burst animation.
 
 ### Mixed Quiz
-- 10 random questions pulled from all topics the user has practiced.
+- 10 random questions pulled from **all topics** (not limited to practiced topics — available from day one).
 - Scored out of 10, result saved to history with timestamp.
 - Accessible from the home screen and unit overview.
 
@@ -177,7 +181,8 @@ Each topic has three modes, accessible from the topic detail screen.
 
 | Hash Route | Screen |
 |-----------|--------|
-| `#home` | Landing — save code entry/generation, unit grid |
+| `index.html` | Landing — save code entry/generation |
+| `#home` | Unit grid overview + XP/streak summary |
 | `#unit/:id` | Unit overview — topic list with completion badges |
 | `#topic/:id` | Topic detail — Guide button, 3 practice mode buttons |
 | `#flashcards/:id` | Flashcard deck for a topic |
