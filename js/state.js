@@ -13,9 +13,6 @@ const ANIMALS = [
   'puffin','raven','shark','sloth','tiger','toucan','viper','walrus','wolf','wombat','zebra'
 ];
 
-/**
- * Generate a new adjective-animal-NNNN code
- */
 export function generateCode() {
   const adj = ADJECTIVES[Math.floor(Math.random() * ADJECTIVES.length)];
   const animal = ANIMALS[Math.floor(Math.random() * ANIMALS.length)];
@@ -23,25 +20,16 @@ export function generateCode() {
   return `${adj}-${animal}-${num}`;
 }
 
-export function getCode() {
-  return localStorage.getItem('algebraCode');
-}
+export function getCode() { return localStorage.getItem('algebraCode'); }
+export function setCode(code) { localStorage.setItem('algebraCode', code); }
 
-export function setCode(code) {
-  localStorage.setItem('algebraCode', code);
-}
-
-// ─── Progress helpers ─────────────────────────────────────────────────────────
+// ─── Progress ────────────────────────────────────────────────────────────────
 
 function progressKey() {
   const code = getCode();
   return code ? `progress-${code}` : 'progress-anonymous';
 }
 
-/**
- * Load progress from localStorage.
- * Shape: { topics: { [topicId]: { flashcardsDone, problemsDone, bestScore } }, xp, streak, lastStudied }
- */
 export function getProgress() {
   try {
     const raw = localStorage.getItem(progressKey());
@@ -51,81 +39,94 @@ export function getProgress() {
 }
 
 export function saveProgress(p) {
-  try {
-    localStorage.setItem(progressKey(), JSON.stringify(p));
-  } catch (e) { /* ignore */ }
+  try { localStorage.setItem(progressKey(), JSON.stringify(p)); } catch (e) { /* ignore */ }
 }
 
-/**
- * Mark a topic mode as done, update XP.
- * mode: 'flashcards' | 'problems' | 'quiz'
- * score: 0-100
- */
 export function markTopicDone(topicId, mode, score) {
   const p = getProgress();
-  if (!p.topics[topicId]) {
-    p.topics[topicId] = { flashcardsDone: false, problemsDone: false, bestScore: 0 };
-  }
-  const topic = p.topics[topicId];
-  if (mode === 'flashcards' && !topic.flashcardsDone) {
-    topic.flashcardsDone = true;
-    p.xp = (p.xp || 0) + 10;
-  }
-  if (mode === 'problems' && !topic.problemsDone) {
-    topic.problemsDone = true;
-    p.xp = (p.xp || 0) + 20;
-  }
-  if (score > (topic.bestScore || 0)) {
-    topic.bestScore = score;
-  }
+  if (!p.topics[topicId]) p.topics[topicId] = { flashcardsDone: false, problemsDone: false, bestScore: 0 };
+  const t = p.topics[topicId];
+  if (mode === 'flashcards' && !t.flashcardsDone) { t.flashcardsDone = true; p.xp = (p.xp || 0) + 10; }
+  if (mode === 'problems' && !t.problemsDone)     { t.problemsDone  = true; p.xp = (p.xp || 0) + 20; }
+  if (score > (t.bestScore || 0)) t.bestScore = score;
   saveProgress(p);
   updateStreak();
 }
 
-// ─── Streak ───────────────────────────────────────────────────────────────────
+// ─── Streak ──────────────────────────────────────────────────────────────────
 
-function todayStr() {
-  return new Date().toISOString().slice(0, 10); // YYYY-MM-DD
-}
+function todayStr() { return new Date().toISOString().slice(0, 10); }
 
 export function getStreak() {
   const p = getProgress();
   if (!p.lastStudied) return 0;
   const today = todayStr();
-  const last = p.lastStudied;
-  if (last === today) return p.streak || 1;
-  // Check if yesterday
-  const yesterday = new Date();
-  yesterday.setDate(yesterday.getDate() - 1);
-  const yStr = yesterday.toISOString().slice(0, 10);
-  if (last === yStr) return p.streak || 1;
-  return 0; // streak broken
+  if (p.lastStudied === today) return p.streak || 1;
+  const yest = new Date(); yest.setDate(yest.getDate() - 1);
+  if (p.lastStudied === yest.toISOString().slice(0, 10)) return p.streak || 1;
+  return 0;
 }
 
 export function updateStreak() {
   const p = getProgress();
   const today = todayStr();
-  if (p.lastStudied === today) return; // already updated today
-  const yesterday = new Date();
-  yesterday.setDate(yesterday.getDate() - 1);
-  const yStr = yesterday.toISOString().slice(0, 10);
-  if (p.lastStudied === yStr) {
+  if (p.lastStudied === today) return;
+  const yest = new Date(); yest.setDate(yest.getDate() - 1);
+  if (p.lastStudied === yest.toISOString().slice(0, 10)) {
     p.streak = (p.streak || 0) + 1;
-  } else if (p.lastStudied !== today) {
+  } else {
     p.streak = 1;
   }
   p.lastStudied = today;
   saveProgress(p);
 }
 
-// ─── XP ───────────────────────────────────────────────────────────────────────
+// ─── XP ──────────────────────────────────────────────────────────────────────
 
-export function getXP() {
-  return getProgress().xp || 0;
-}
+export function getXP() { return getProgress().xp || 0; }
 
 export function addXP(amount) {
   const p = getProgress();
   p.xp = (p.xp || 0) + amount;
   saveProgress(p);
+}
+
+// ─── Export / Import ─────────────────────────────────────────────────────────
+
+/**
+ * Export all progress + code as a compact base64 string.
+ * The string starts with "AS1:" so it's recognisable.
+ */
+export function exportSave() {
+  const payload = { code: getCode(), progress: getProgress() };
+  try {
+    return 'AS1:' + btoa(unescape(encodeURIComponent(JSON.stringify(payload))));
+  } catch (e) { return null; }
+}
+
+/**
+ * Import from a save string (produced by exportSave).
+ * Returns true on success, false on failure.
+ */
+export function importSave(str) {
+  try {
+    if (!str || !str.startsWith('AS1:')) return false;
+    const payload = JSON.parse(decodeURIComponent(escape(atob(str.slice(4)))));
+    if (!payload || !payload.code || !payload.progress) return false;
+    setCode(payload.code);
+    // Store progress under the imported code's key
+    localStorage.setItem(`progress-${payload.code}`, JSON.stringify(payload.progress));
+    return true;
+  } catch (e) { return false; }
+}
+
+/**
+ * Build a shareable quick-access URL using the current code.
+ * Visiting this URL auto-logs the user in on index.html.
+ */
+export function buildQuickLink() {
+  const code = getCode();
+  if (!code) return null;
+  const base = location.href.replace(/app\.html.*$/, '');
+  return `${base}index.html?code=${encodeURIComponent(code)}`;
 }
