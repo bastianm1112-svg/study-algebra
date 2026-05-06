@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Algebra 1 Study</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Top Navigation Bar -->
+  <nav class="nav-bar">
+    <button class="calc-toggle-btn" id="calcToggleBtn" title="Open Calculator">📊</button>
+    <span class="nav-title" id="navTitle">Algebra 1 Study</span>
+    <div class="nav-right">
+      <span class="xp-badge" id="xpBadge">⭐ 0 XP</span>
+      <span class="streak-badge" id="streakBadge">🔥 0</span>
+    </div>
+  </nav>
+
+  <!-- Main App Root -->
+  <main class="app-root" id="app-root">
+    <div class="loading-state">
+      <div class="loading-spinner"></div>
+      <p>Loading...</p>
+    </div>
+  </main>
+
+  <!-- Desmos Calculator Overlay -->
+  <div class="calc-overlay" id="calc-overlay">
+    <div class="calc-header">
+      <span class="calc-title">📊 Graphing Calculator</span>
+      <button class="calc-close" id="calcCloseBtn">✕</button>
+    </div>
+    <div id="desmos-container"></div>
+  </div>
+
+  <!-- XP Toast -->
+  <div class="xp-toast" id="xp-toast"></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
