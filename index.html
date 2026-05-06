@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Algebra 1 Study</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f8f7ff;
+      font-family: 'Nunito', sans-serif;
+      padding: 20px;
+    }
+    .landing-card {
+      background: white;
+      border-radius: 28px;
+      box-shadow: 0 8px 40px rgba(108,99,255,0.15);
+      padding: 48px 40px;
+      max-width: 460px;
+      width: 100%;
+      text-align: center;
+    }
+    .landing-logo {
+      font-size: 3.5rem;
+      margin-bottom: 8px;
+    }
+    .landing-title {
+      font-size: 2rem;
+      font-weight: 900;
+      color: #6c63ff;
+      margin: 0 0 8px 0;
+    }
+    .landing-subtitle {
+      font-size: 1.05rem;
+      color: #888;
+      font-weight: 600;
+      margin: 0 0 36px 0;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #6c63ff, #a78bfa);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      padding: 16px 36px;
+      font-size: 1.1rem;
+      font-weight: 800;
+      font-family: 'Nunito', sans-serif;
+      cursor: pointer;
+      width: 100%;
+      transition: transform 0.15s, box-shadow 0.15s;
+      box-shadow: 0 4px 16px rgba(108,99,255,0.35);
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(108,99,255,0.4); }
+    .btn-primary:active { transform: scale(0.97); }
+    .btn-secondary {
+      background: white;
+      color: #6c63ff;
+      border: 2.5px solid #6c63ff;
+      border-radius: 50px;
+      padding: 14px 36px;
+      font-size: 1rem;
+      font-weight: 800;
+      font-family: 'Nunito', sans-serif;
+      cursor: pointer;
+      width: 100%;
+      transition: transform 0.15s, background 0.15s;
+    }
+    .btn-secondary:hover { background: #f0eeff; transform: translateY(-2px); }
+    .btn-secondary:active { transform: scale(0.97); }
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 28px 0;
+      color: #ccc;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    .divider::before, .divider::after {
+      content: '';
+      flex: 1;
+      height: 1.5px;
+      background: #e8e6ff;
+    }
+    .code-box {
+      background: #f0eeff;
+      border: 2px dashed #a78bfa;
+      border-radius: 16px;
+      padding: 18px 20px;
+      margin: 20px 0;
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .code-box.visible { display: flex; }
+    .code-text {
+      font-size: 1.3rem;
+      font-weight: 900;
+      color: #6c63ff;
+      letter-spacing: 0.04em;
+    }
+    .copy-btn {
+      background: #6c63ff;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 8px 16px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: opacity 0.15s;
+      white-space: nowrap;
+    }
+    .copy-btn:hover { opacity: 0.85; }
+    .start-btn {
+      background: linear-gradient(135deg, #43c6ac, #34d399);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      padding: 16px 36px;
+      font-size: 1.1rem;
+      font-weight: 800;
+      font-family: 'Nunito', sans-serif;
+      cursor: pointer;
+      width: 100%;
+      transition: transform 0.15s, box-shadow 0.15s;
+      box-shadow: 0 4px 16px rgba(67,198,172,0.35);
+      display: none;
+      margin-top: 12px;
+    }
+    .start-btn.visible { display: block; }
+    .start-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(67,198,172,0.4); }
+    .start-btn:active { transform: scale(0.97); }
+    .have-code-section { margin-top: 4px; }
+    .code-input {
+      width: 100%;
+      border: 2.5px solid #e8e6ff;
+      border-radius: 14px;
+      padding: 14px 18px;
+      font-size: 1.05rem;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      color: #333;
+      outline: none;
+      box-sizing: border-box;
+      margin-bottom: 12px;
+      transition: border-color 0.2s;
+    }
+    .code-input:focus { border-color: #6c63ff; }
+    .code-input.error { border-color: #ff6584; }
+    .error-msg {
+      color: #ff6584;
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-top: -8px;
+      margin-bottom: 12px;
+      display: none;
+    }
+    .error-msg.visible { display: block; }
+    .section-label {
+      text-align: left;
+      font-weight: 800;
+      color: #555;
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+  <div class="landing-card">
+    <div class="landing-logo">📐</div>
+    <h1 class="landing-title">Algebra 1 Study</h1>
+    <p class="landing-subtitle">Master algebra with flashcards, practice problems &amp; quizzes!</p>
+
+    <div class="section-label">New Student</div>
+    <button class="btn-primary" id="generateBtn">✨ Generate My Code</button>
+
+    <div class="code-box" id="codeBox">
+      <span class="code-text" id="codeDisplay"></span>
+      <button class="copy-btn" id="copyBtn">📋 Copy</button>
+    </div>
+    <button class="start-btn" id="startBtn">Start Studying →</button>
+
+    <div class="divider">OR</div>
+
+    <div class="have-code-section">
+      <div class="section-label">Already have a code?</div>
+      <input class="code-input" type="text" id="codeInput" placeholder="e.g. swift-panda-4291" />
+      <div class="error-msg" id="errorMsg">Please enter your code first!</div>
+      <button class="btn-secondary" id="continueBtn">Continue →</button>
+    </div>
+  </div>
+
+  <script>
+    // If code already stored, skip to app
+    const existingCode = localStorage.getItem('algebraCode');
+    if (existingCode) {
+      window.location.href = 'app.html';
+    }
+
+    const ADJECTIVES = ['swift','brave','bright','calm','cool','dark','deep','eager',
+      'fast','free','glad','good','high','huge','keen','kind','loud','mild',
+      'nice','pure','quiet','rare','rich','safe','sharp','smart','soft','warm','wild','wise'];
+    const ANIMALS = ['badger','beaver','cobra','crane','eagle','falcon','gecko','heron',
+      'jaguar','koala','lemur','lynx','moose','narwhal','orca','panda','penguin',
+      'puffin','raven','shark','sloth','tiger','toucan','viper','walrus','wolf','wombat','zebra'];
+
+    function generateCode() {
+      const adj = ADJECTIVES[Math.floor(Math.random() * ADJECTIVES.length)];
+      const animal = ANIMALS[Math.floor(Math.random() * ANIMALS.length)];
+      const num = String(Math.floor(Math.random() * 9000) + 1000);
+      return `${adj}-${animal}-${num}`;
+    }
+
+    document.getElementById('generateBtn').addEventListener('click', () => {
+      const code = generateCode();
+      localStorage.setItem('algebraCode', code);
+      document.getElementById('codeDisplay').textContent = code;
+      document.getElementById('codeBox').classList.add('visible');
+      document.getElementById('startBtn').classList.add('visible');
+      document.getElementById('generateBtn').textContent = '🔄 Generate New Code';
+    });
+
+    document.getElementById('copyBtn').addEventListener('click', () => {
+      const code = document.getElementById('codeDisplay').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        document.getElementById('copyBtn').textContent = '✅ Copied!';
+        setTimeout(() => { document.getElementById('copyBtn').textContent = '📋 Copy'; }, 2000);
+      });
+    });
+
+    document.getElementById('startBtn').addEventListener('click', () => {
+      window.location.href = 'app.html';
+    });
+
+    document.getElementById('continueBtn').addEventListener('click', () => {
+      const input = document.getElementById('codeInput').value.trim();
+      const errorMsg = document.getElementById('errorMsg');
+      const codeInput = document.getElementById('codeInput');
+      if (!input) {
+        codeInput.classList.add('error');
+        errorMsg.classList.add('visible');
+        return;
+      }
+      codeInput.classList.remove('error');
+      errorMsg.classList.remove('visible');
+      localStorage.setItem('algebraCode', input);
+      window.location.href = 'app.html';
+    });
+
+    document.getElementById('codeInput').addEventListener('input', () => {
+      document.getElementById('codeInput').classList.remove('error');
+      document.getElementById('errorMsg').classList.remove('visible');
+    });
+  </script>
+</body>
+</html>
