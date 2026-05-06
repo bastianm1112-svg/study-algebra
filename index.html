@@ -23,158 +23,103 @@
       border-radius: 28px;
       box-shadow: 0 8px 40px rgba(108,99,255,0.15);
       padding: 48px 40px;
-      max-width: 460px;
+      max-width: 480px;
       width: 100%;
       text-align: center;
     }
-    .landing-logo {
-      font-size: 3.5rem;
-      margin-bottom: 8px;
-    }
-    .landing-title {
-      font-size: 2rem;
-      font-weight: 900;
-      color: #6c63ff;
-      margin: 0 0 8px 0;
-    }
-    .landing-subtitle {
-      font-size: 1.05rem;
-      color: #888;
-      font-weight: 600;
-      margin: 0 0 36px 0;
-    }
+    .landing-logo { font-size: 3.5rem; margin-bottom: 8px; }
+    .landing-title { font-size: 2rem; font-weight: 900; color: #6c63ff; margin: 0 0 8px 0; }
+    .landing-subtitle { font-size: 1.05rem; color: #888; font-weight: 600; margin: 0 0 32px 0; }
     .btn-primary {
       background: linear-gradient(135deg, #6c63ff, #a78bfa);
-      color: white;
-      border: none;
-      border-radius: 50px;
-      padding: 16px 36px;
-      font-size: 1.1rem;
-      font-weight: 800;
-      font-family: 'Nunito', sans-serif;
-      cursor: pointer;
-      width: 100%;
+      color: white; border: none; border-radius: 50px;
+      padding: 16px 36px; font-size: 1.1rem; font-weight: 800;
+      font-family: 'Nunito', sans-serif; cursor: pointer; width: 100%;
       transition: transform 0.15s, box-shadow 0.15s;
       box-shadow: 0 4px 16px rgba(108,99,255,0.35);
     }
     .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(108,99,255,0.4); }
     .btn-primary:active { transform: scale(0.97); }
     .btn-secondary {
-      background: white;
-      color: #6c63ff;
-      border: 2.5px solid #6c63ff;
-      border-radius: 50px;
-      padding: 14px 36px;
-      font-size: 1rem;
-      font-weight: 800;
-      font-family: 'Nunito', sans-serif;
-      cursor: pointer;
-      width: 100%;
+      background: white; color: #6c63ff; border: 2.5px solid #6c63ff;
+      border-radius: 50px; padding: 14px 36px; font-size: 1rem; font-weight: 800;
+      font-family: 'Nunito', sans-serif; cursor: pointer; width: 100%;
       transition: transform 0.15s, background 0.15s;
     }
     .btn-secondary:hover { background: #f0eeff; transform: translateY(-2px); }
-    .btn-secondary:active { transform: scale(0.97); }
+    .btn-teal {
+      background: linear-gradient(135deg, #43c6ac, #34d399);
+      color: white; border: none; border-radius: 50px;
+      padding: 14px 36px; font-size: 1rem; font-weight: 800;
+      font-family: 'Nunito', sans-serif; cursor: pointer; width: 100%;
+      transition: transform 0.15s, box-shadow 0.15s;
+      box-shadow: 0 4px 14px rgba(67,198,172,0.3);
+    }
+    .btn-teal:hover { transform: translateY(-2px); }
+    .btn-teal:active { transform: scale(0.97); }
     .divider {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin: 28px 0;
-      color: #ccc;
-      font-weight: 700;
-      font-size: 0.9rem;
+      display: flex; align-items: center; gap: 12px;
+      margin: 24px 0; color: #ccc; font-weight: 700; font-size: 0.9rem;
     }
-    .divider::before, .divider::after {
-      content: '';
-      flex: 1;
-      height: 1.5px;
-      background: #e8e6ff;
-    }
+    .divider::before, .divider::after { content: ''; flex: 1; height: 1.5px; background: #e8e6ff; }
     .code-box {
-      background: #f0eeff;
-      border: 2px dashed #a78bfa;
-      border-radius: 16px;
-      padding: 18px 20px;
-      margin: 20px 0;
-      display: none;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
+      background: #f0eeff; border: 2px dashed #a78bfa; border-radius: 16px;
+      padding: 18px 20px; margin: 20px 0;
+      display: none; align-items: center; justify-content: space-between; gap: 12px;
     }
     .code-box.visible { display: flex; }
-    .code-text {
-      font-size: 1.3rem;
-      font-weight: 900;
-      color: #6c63ff;
-      letter-spacing: 0.04em;
-    }
+    .code-text { font-size: 1.3rem; font-weight: 900; color: #6c63ff; letter-spacing: 0.04em; }
     .copy-btn {
-      background: #6c63ff;
-      color: white;
-      border: none;
-      border-radius: 10px;
-      padding: 8px 16px;
-      font-family: 'Nunito', sans-serif;
-      font-weight: 700;
-      cursor: pointer;
-      font-size: 0.9rem;
-      transition: opacity 0.15s;
-      white-space: nowrap;
+      background: #6c63ff; color: white; border: none; border-radius: 10px;
+      padding: 8px 16px; font-family: 'Nunito', sans-serif; font-weight: 700;
+      cursor: pointer; font-size: 0.9rem; transition: opacity 0.15s; white-space: nowrap;
     }
     .copy-btn:hover { opacity: 0.85; }
     .start-btn {
-      background: linear-gradient(135deg, #43c6ac, #34d399);
-      color: white;
-      border: none;
-      border-radius: 50px;
-      padding: 16px 36px;
-      font-size: 1.1rem;
-      font-weight: 800;
-      font-family: 'Nunito', sans-serif;
-      cursor: pointer;
-      width: 100%;
+      background: linear-gradient(135deg, #43c6ac, #34d399); color: white;
+      border: none; border-radius: 50px; padding: 16px 36px; font-size: 1.1rem;
+      font-weight: 800; font-family: 'Nunito', sans-serif; cursor: pointer; width: 100%;
       transition: transform 0.15s, box-shadow 0.15s;
-      box-shadow: 0 4px 16px rgba(67,198,172,0.35);
-      display: none;
-      margin-top: 12px;
+      box-shadow: 0 4px 16px rgba(67,198,172,0.35); display: none; margin-top: 12px;
     }
     .start-btn.visible { display: block; }
-    .start-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(67,198,172,0.4); }
+    .start-btn:hover { transform: translateY(-2px); }
     .start-btn:active { transform: scale(0.97); }
-    .have-code-section { margin-top: 4px; }
+    .section-label {
+      text-align: left; font-weight: 800; color: #555; font-size: 0.9rem;
+      margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em;
+    }
     .code-input {
-      width: 100%;
-      border: 2.5px solid #e8e6ff;
-      border-radius: 14px;
-      padding: 14px 18px;
-      font-size: 1.05rem;
-      font-family: 'Nunito', sans-serif;
-      font-weight: 700;
-      color: #333;
-      outline: none;
-      box-sizing: border-box;
-      margin-bottom: 12px;
-      transition: border-color 0.2s;
+      width: 100%; border: 2.5px solid #e8e6ff; border-radius: 14px;
+      padding: 14px 18px; font-size: 1.05rem; font-family: 'Nunito', sans-serif;
+      font-weight: 700; color: #333; outline: none; box-sizing: border-box;
+      margin-bottom: 12px; transition: border-color 0.2s;
     }
     .code-input:focus { border-color: #6c63ff; }
     .code-input.error { border-color: #ff6584; }
-    .error-msg {
-      color: #ff6584;
-      font-weight: 700;
-      font-size: 0.9rem;
-      margin-top: -8px;
-      margin-bottom: 12px;
-      display: none;
-    }
+    .error-msg { color: #ff6584; font-weight: 700; font-size: 0.9rem; margin-top: -8px; margin-bottom: 12px; display: none; }
     .error-msg.visible { display: block; }
-    .section-label {
-      text-align: left;
-      font-weight: 800;
-      color: #555;
-      font-size: 0.9rem;
-      margin-bottom: 8px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
+    .success-msg { color: #43c6ac; font-weight: 700; font-size: 0.9rem; margin-bottom: 12px; display: none; }
+    .success-msg.visible { display: block; }
+    /* Tab system */
+    .tabs { display: flex; gap: 8px; margin-bottom: 20px; }
+    .tab-btn {
+      flex: 1; padding: 10px; border: 2.5px solid #e8e6ff; border-radius: 12px;
+      background: white; font-family: 'Nunito', sans-serif; font-weight: 800;
+      font-size: 0.9rem; color: #aaa; cursor: pointer; transition: all 0.15s;
     }
+    .tab-btn.active { background: #6c63ff; border-color: #6c63ff; color: white; }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+    /* Welcome back banner */
+    .welcome-banner {
+      background: linear-gradient(135deg, #6c63ff, #a78bfa);
+      color: white; border-radius: 20px; padding: 20px 24px; margin-bottom: 24px;
+      text-align: left; display: none;
+    }
+    .welcome-banner.visible { display: block; }
+    .welcome-banner-title { font-size: 1.1rem; font-weight: 900; margin-bottom: 4px; }
+    .welcome-banner-sub { font-size: 0.9rem; opacity: 0.85; font-weight: 600; }
   </style>
 </head>
 <body>
@@ -183,46 +128,79 @@
     <h1 class="landing-title">Algebra 1 Study</h1>
     <p class="landing-subtitle">Master algebra with flashcards, practice problems &amp; quizzes!</p>
 
-    <div class="section-label">New Student</div>
-    <button class="btn-primary" id="generateBtn">✨ Generate My Code</button>
-
-    <div class="code-box" id="codeBox">
-      <span class="code-text" id="codeDisplay"></span>
-      <button class="copy-btn" id="copyBtn">📋 Copy</button>
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="new">✨ New Student</button>
+      <button class="tab-btn" data-tab="return">🔑 Return</button>
+      <button class="tab-btn" data-tab="import">📥 Import</button>
     </div>
-    <button class="start-btn" id="startBtn">Start Studying →</button>
 
-    <div class="divider">OR</div>
+    <!-- New Student tab -->
+    <div class="tab-panel active" id="tab-new">
+      <button class="btn-primary" id="generateBtn">✨ Generate My Code</button>
+      <div class="code-box" id="codeBox">
+        <span class="code-text" id="codeDisplay"></span>
+        <button class="copy-btn" id="copyBtn">📋 Copy</button>
+      </div>
+      <button class="start-btn" id="startBtn">Start Studying →</button>
+    </div>
 
-    <div class="have-code-section">
-      <div class="section-label">Already have a code?</div>
+    <!-- Return tab -->
+    <div class="tab-panel" id="tab-return">
+      <div class="section-label">Enter your code</div>
       <input class="code-input" type="text" id="codeInput" placeholder="e.g. swift-panda-4291" />
       <div class="error-msg" id="errorMsg">Please enter your code first!</div>
       <button class="btn-secondary" id="continueBtn">Continue →</button>
     </div>
+
+    <!-- Import Save tab -->
+    <div class="tab-panel" id="tab-import">
+      <div class="section-label">Paste your save string</div>
+      <textarea class="code-input" id="importInput" rows="4"
+        placeholder="Paste your save string here (starts with AS1:...)"
+        style="resize:vertical;font-size:0.85rem;line-height:1.5;"></textarea>
+      <div class="error-msg" id="importError">Invalid save string. Make sure it starts with AS1:</div>
+      <div class="success-msg" id="importSuccess">✅ Progress imported! Loading your profile...</div>
+      <button class="btn-teal" id="importBtn">📥 Import &amp; Continue</button>
+    </div>
   </div>
 
   <script>
-    // If code already stored, skip to app
-    const existingCode = localStorage.getItem('algebraCode');
-    if (existingCode) {
+    // ── Handle ?code= quick-link (e.g. shared bookmark) ──────────────────────
+    const params = new URLSearchParams(location.search);
+    const quickCode = params.get('code');
+    if (quickCode) {
+      localStorage.setItem('algebraCode', quickCode);
       window.location.href = 'app.html';
     }
 
+    // ── If code already stored, skip straight to app ──────────────────────────
+    if (localStorage.getItem('algebraCode')) {
+      window.location.href = 'app.html';
+    }
+
+    // ── Code generator ────────────────────────────────────────────────────────
     const ADJECTIVES = ['swift','brave','bright','calm','cool','dark','deep','eager',
       'fast','free','glad','good','high','huge','keen','kind','loud','mild',
       'nice','pure','quiet','rare','rich','safe','sharp','smart','soft','warm','wild','wise'];
     const ANIMALS = ['badger','beaver','cobra','crane','eagle','falcon','gecko','heron',
       'jaguar','koala','lemur','lynx','moose','narwhal','orca','panda','penguin',
       'puffin','raven','shark','sloth','tiger','toucan','viper','walrus','wolf','wombat','zebra'];
-
     function generateCode() {
-      const adj = ADJECTIVES[Math.floor(Math.random() * ADJECTIVES.length)];
-      const animal = ANIMALS[Math.floor(Math.random() * ANIMALS.length)];
-      const num = String(Math.floor(Math.random() * 9000) + 1000);
-      return `${adj}-${animal}-${num}`;
+      return `${ADJECTIVES[Math.floor(Math.random()*ADJECTIVES.length)]}-${ANIMALS[Math.floor(Math.random()*ANIMALS.length)]}-${Math.floor(Math.random()*9000)+1000}`;
     }
 
+    // ── Tab switching ─────────────────────────────────────────────────────────
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+      });
+    });
+
+    // ── New student ───────────────────────────────────────────────────────────
     document.getElementById('generateBtn').addEventListener('click', () => {
       const code = generateCode();
       localStorage.setItem('algebraCode', code);
@@ -231,37 +209,52 @@
       document.getElementById('startBtn').classList.add('visible');
       document.getElementById('generateBtn').textContent = '🔄 Generate New Code';
     });
-
     document.getElementById('copyBtn').addEventListener('click', () => {
-      const code = document.getElementById('codeDisplay').textContent;
-      navigator.clipboard.writeText(code).then(() => {
+      navigator.clipboard.writeText(document.getElementById('codeDisplay').textContent).then(() => {
         document.getElementById('copyBtn').textContent = '✅ Copied!';
         setTimeout(() => { document.getElementById('copyBtn').textContent = '📋 Copy'; }, 2000);
       });
     });
+    document.getElementById('startBtn').addEventListener('click', () => { window.location.href = 'app.html'; });
 
-    document.getElementById('startBtn').addEventListener('click', () => {
-      window.location.href = 'app.html';
-    });
-
+    // ── Return student ────────────────────────────────────────────────────────
     document.getElementById('continueBtn').addEventListener('click', () => {
       const input = document.getElementById('codeInput').value.trim();
-      const errorMsg = document.getElementById('errorMsg');
-      const codeInput = document.getElementById('codeInput');
       if (!input) {
-        codeInput.classList.add('error');
-        errorMsg.classList.add('visible');
+        document.getElementById('codeInput').classList.add('error');
+        document.getElementById('errorMsg').classList.add('visible');
         return;
       }
-      codeInput.classList.remove('error');
-      errorMsg.classList.remove('visible');
       localStorage.setItem('algebraCode', input);
       window.location.href = 'app.html';
     });
-
     document.getElementById('codeInput').addEventListener('input', () => {
       document.getElementById('codeInput').classList.remove('error');
       document.getElementById('errorMsg').classList.remove('visible');
+    });
+
+    // ── Import save ───────────────────────────────────────────────────────────
+    document.getElementById('importBtn').addEventListener('click', () => {
+      const str = document.getElementById('importInput').value.trim();
+      const errEl = document.getElementById('importError');
+      const okEl  = document.getElementById('importSuccess');
+      errEl.classList.remove('visible');
+      okEl.classList.remove('visible');
+
+      if (!str.startsWith('AS1:')) {
+        errEl.classList.add('visible');
+        return;
+      }
+      try {
+        const payload = JSON.parse(decodeURIComponent(escape(atob(str.slice(4)))));
+        if (!payload.code || !payload.progress) throw new Error('bad payload');
+        localStorage.setItem('algebraCode', payload.code);
+        localStorage.setItem(`progress-${payload.code}`, JSON.stringify(payload.progress));
+        okEl.classList.add('visible');
+        setTimeout(() => { window.location.href = 'app.html'; }, 1200);
+      } catch (e) {
+        errEl.classList.add('visible');
+      }
     });
   </script>
 </body>
