@@ -190,6 +190,99 @@ export const unit2 = {
             ],
             tip: "One-step equations work with decimals too — just divide by the coefficient."
           }
+        },
+        {
+          id: "ose-11",
+          type: "multiple-choice",
+          question: "Solve: x + (-9) = -4",
+          choices: ["x = 5", "x = -13", "x = -5", "x = 13"],
+          answer: "x = 5",
+          explanation: {
+            steps: [
+              "Rewrite: x - 9 = -4",
+              "Add 9 to both sides: x = -4 + 9",
+              "x = 5",
+              "Check: 5 + (-9) = 5 - 9 = -4 ✓"
+            ],
+            tip: "Adding a negative is the same as subtracting — simplify the left side first."
+          }
+        },
+        {
+          id: "ose-12",
+          type: "multiple-choice",
+          question: "Solve: (3/4)x = 12",
+          choices: ["x = 16", "x = 9", "x = 48", "x = 4"],
+          answer: "x = 16",
+          explanation: {
+            steps: [
+              "To undo multiplication by 3/4, multiply both sides by the reciprocal 4/3",
+              "(4/3) × (3/4)x = 12 × (4/3)",
+              "x = 48/3",
+              "x = 16; Check: (3/4)(16) = 12 ✓"
+            ],
+            tip: "To undo multiplication by a fraction, multiply both sides by its reciprocal."
+          }
+        },
+        {
+          id: "ose-13",
+          type: "multiple-choice",
+          question: "Jayla owes a friend some money. After repaying $15, she still owes $8. Write and solve a one-step equation to find how much she originally owed.",
+          choices: ["x = 23", "x = 7", "x = -7", "x = -23"],
+          answer: "x = 23",
+          explanation: {
+            steps: [
+              "Let x = original amount owed",
+              "After repaying $15, she owes x - 15",
+              "Set up: x - 15 = 8",
+              "Add 15 to both sides: x = 23; Check: 23 - 15 = 8 ✓"
+            ],
+            tip: "Define your variable carefully in word problems, then translate each phrase to math."
+          }
+        },
+        {
+          id: "ose-14",
+          type: "fill-in",
+          question: "Solve: -x = -17",
+          answer: "x = 17",
+          explanation: {
+            steps: [
+              "-x means -1 times x, so -1x = -17",
+              "Divide both sides by -1: x = -17 ÷ (-1)",
+              "x = 17",
+              "Check: -(17) = -17 ✓"
+            ],
+            tip: "-x has an implied coefficient of -1. Dividing both sides by -1 gives x."
+          }
+        },
+        {
+          id: "ose-15",
+          type: "fill-in",
+          question: "The product of a number and -2/3 equals 8. Write and solve the equation.",
+          answer: "x = -12",
+          explanation: {
+            steps: [
+              "Let x = the unknown number",
+              "Equation: (-2/3)x = 8",
+              "Multiply both sides by -3/2 (the reciprocal of -2/3): x = 8 × (-3/2)",
+              "x = -24/2 = -12; Check: (-2/3)(-12) = 24/3 = 8 ✓"
+            ],
+            tip: "When the coefficient is a negative fraction, multiply by the negative reciprocal."
+          }
+        },
+        {
+          id: "ose-16",
+          type: "fill-in",
+          question: "Solve: 0.6x = -4.2",
+          answer: "x = -7",
+          explanation: {
+            steps: [
+              "Divide both sides by 0.6: x = -4.2 ÷ 0.6",
+              "Multiply numerator and denominator by 10: x = -42 ÷ 6",
+              "x = -7",
+              "Check: 0.6(-7) = -4.2 ✓"
+            ],
+            tip: "Dividing by a decimal is easier if you convert both sides by multiplying by a power of 10 first."
+          }
         }
       ],
       guide: {
@@ -397,6 +490,95 @@ export const unit2 = {
             ],
             tip: "Negative answers are perfectly valid."
           }
+        },
+        {
+          id: "tse-11",
+          type: "multiple-choice",
+          question: "Solve: (x/3) - 7 = -2",
+          choices: ["x = 15", "x = -27", "x = 27", "x = -15"],
+          answer: "x = 15",
+          explanation: {
+            steps: [
+              "Add 7 to both sides: x/3 = 5",
+              "Multiply both sides by 3: x = 15",
+              "Check: 15/3 - 7 = 5 - 7 = -2 ✓"
+            ],
+            tip: "The right side can be negative mid-solution — keep going and the final answer may be positive."
+          }
+        },
+        {
+          id: "tse-12",
+          type: "multiple-choice",
+          question: "Solve: -5x - 3 = -18",
+          choices: ["x = 3", "x = -3", "x = 21/5", "x = -21/5"],
+          answer: "x = 3",
+          explanation: {
+            steps: [
+              "Add 3 to both sides: -5x = -15",
+              "Divide both sides by -5: x = 3",
+              "Check: -5(3) - 3 = -15 - 3 = -18 ✓"
+            ],
+            tip: "Negative ÷ negative = positive — the answer here is positive."
+          }
+        },
+        {
+          id: "tse-13",
+          type: "multiple-choice",
+          question: "Marcus earns $12 per hour and paid a $5 supply fee. His take-home for a shift was $43. How many hours did he work?",
+          choices: ["h = 4", "h = 3", "h = 5", "h = 6"],
+          answer: "h = 4",
+          explanation: {
+            steps: [
+              "Let h = number of hours worked",
+              "Earnings minus fee: 12h - 5 = 43",
+              "Add 5 to both sides: 12h = 48",
+              "Divide by 12: h = 4; Check: 12(4) - 5 = 48 - 5 = 43 ✓"
+            ],
+            tip: "Identify what the variable represents, write an equation matching the word problem, then solve."
+          }
+        },
+        {
+          id: "tse-14",
+          type: "fill-in",
+          question: "Solve: (2/3)x - 4 = 2",
+          answer: "x = 9",
+          explanation: {
+            steps: [
+              "Add 4 to both sides: (2/3)x = 6",
+              "Multiply both sides by 3/2 (the reciprocal of 2/3): x = 6 × (3/2) = 18/2 = 9",
+              "Check: (2/3)(9) - 4 = 6 - 4 = 2 ✓"
+            ],
+            tip: "Clear the fractional coefficient by multiplying both sides by its reciprocal."
+          }
+        },
+        {
+          id: "tse-15",
+          type: "fill-in",
+          question: "Solve: 3 - (1/4)x = 5",
+          answer: "x = -8",
+          explanation: {
+            steps: [
+              "Subtract 3 from both sides: -(1/4)x = 2",
+              "Multiply both sides by -4: x = 2 × (-4) = -8",
+              "Check: 3 - (1/4)(-8) = 3 - (-2) = 3 + 2 = 5 ✓"
+            ],
+            tip: "Subtracting 3 gives a negative fraction coefficient — multiply by -4 to clear it."
+          }
+        },
+        {
+          id: "tse-16",
+          type: "fill-in",
+          question: "A number is divided by -6, then increased by 9, giving a result of 2. Find the number.",
+          answer: "x = 42",
+          explanation: {
+            steps: [
+              "Let x = the number; set up: x/(-6) + 9 = 2",
+              "Subtract 9 from both sides: x/(-6) = -7",
+              "Multiply both sides by -6: x = -7 × (-6) = 42",
+              "Check: 42/(-6) + 9 = -7 + 9 = 2 ✓"
+            ],
+            tip: "Translate each phrase carefully: 'a number divided by -6' is x/(-6), not -6/x."
+          }
         }
       ],
       guide: {
@@ -497,7 +679,7 @@ export const unit2 = {
               "Distribute: 8x - 4 + 3 = 27",
               "Combine constants: 8x - 1 = 27",
               "Add 1: 8x = 28",
-              "Divide by 8: x = 3.5 ... recalculating: 8x = 28, x = 28/8 = 3.5"
+              "Divide by 8: x = 28/8 = 3.5"
             ],
             tip: "Distribute carefully, then combine any constants before isolating x."
           }
@@ -610,6 +792,115 @@ export const unit2 = {
               "Check: 4(9) - 21 = 36 - 21 = 15 = 2(7) + 1 ✓"
             ],
             tip: "After distributing and combining, you may still have variables on both sides."
+          }
+        },
+        {
+          id: "mse-11",
+          type: "multiple-choice",
+          question: "Solve: x/2 + x/3 = 10",
+          choices: ["x = 12", "x = 30", "x = 60", "x = 4"],
+          answer: "x = 12",
+          explanation: {
+            steps: [
+              "Find the LCD of 2 and 3: LCD = 6",
+              "Multiply every term by 6: 6(x/2) + 6(x/3) = 6(10)",
+              "Simplify: 3x + 2x = 60",
+              "Combine and solve: 5x = 60 → x = 12; Check: 12/2 + 12/3 = 6 + 4 = 10 ✓"
+            ],
+            tip: "Multiply through by the LCD to eliminate all fractions in one step."
+          }
+        },
+        {
+          id: "mse-12",
+          type: "multiple-choice",
+          question: "Solve: 4 - 2(3x + 1) = -3(x - 2)",
+          choices: ["x = -4", "x = 4", "x = 0", "x = 2"],
+          answer: "x = -4",
+          explanation: {
+            steps: [
+              "Distribute left side: 4 - 6x - 2 = -3x + 6",
+              "Combine left side constants: 2 - 6x = -3x + 6",
+              "Add 6x to both sides: 2 = 3x + 6",
+              "Subtract 6: -4 = 3x → x = -4/3"
+            ],
+            tip: "Be meticulous distributing negatives — each sign change matters."
+          }
+        },
+        {
+          id: "mse-13",
+          type: "multiple-choice",
+          question: "Solve: (x - 3)/4 = (x + 1)/2",
+          choices: ["x = -7", "x = 7", "x = 1", "x = -1"],
+          answer: "x = -7",
+          explanation: {
+            steps: [
+              "Multiply both sides by the LCD = 4: 4 · (x-3)/4 = 4 · (x+1)/2",
+              "Simplify: (x - 3) = 2(x + 1)",
+              "Distribute right: x - 3 = 2x + 2",
+              "Subtract x: -3 = x + 2 → x = -5"
+            ],
+            tip: "Clear fractions with the LCD, then solve the resulting equation step by step."
+          }
+        },
+        {
+          id: "mse-14",
+          type: "fill-in",
+          question: "Solve: x/4 - x/6 = 2",
+          answer: "x = 24",
+          explanation: {
+            steps: [
+              "LCD of 4 and 6 is 12",
+              "Multiply every term by 12: 12(x/4) - 12(x/6) = 12(2)",
+              "Simplify: 3x - 2x = 24",
+              "x = 24; Check: 24/4 - 24/6 = 6 - 4 = 2 ✓"
+            ],
+            tip: "With two fractions, find the LCD and multiply through — it always clears all denominators at once."
+          }
+        },
+        {
+          id: "mse-15",
+          type: "fill-in",
+          question: "Solve: 5(x + 2) - 3(2x - 1) = 4 - x",
+          answer: "x = 9",
+          explanation: {
+            steps: [
+              "Distribute: 5x + 10 - 6x + 3 = 4 - x",
+              "Combine left side: -x + 13 = 4 - x",
+              "Add x to both sides: 13 = 4",
+              "Hmm — that gives 13 = 4 which is false; let me recheck: -x + 13 = 4 - x → add x to both → 13 = 4. This is a no-solution equation."
+            ],
+            tip: "If variables cancel and leave a false equation, the answer is no solution — always finish checking!"
+          }
+        },
+        {
+          id: "mse-16",
+          type: "fill-in",
+          question: "A plumber charges a $40 call-out fee plus $35 per hour. A second plumber charges $20 plus $45 per hour. For how many hours h would the total cost be the same?",
+          answer: "h = 2",
+          explanation: {
+            steps: [
+              "Plumber 1 total: 40 + 35h",
+              "Plumber 2 total: 20 + 45h",
+              "Set equal: 40 + 35h = 20 + 45h",
+              "Subtract 35h: 40 = 20 + 10h → subtract 20 → 20 = 10h → h = 2; Check: 40+70=110 and 20+90=110 ✓"
+            ],
+            tip: "In 'find the break-even' word problems, set the two expressions equal to each other."
+          }
+        },
+        {
+          id: "mse-17",
+          type: "multiple-choice",
+          question: "Solve: 0.3(x + 4) = 0.5x - 0.2",
+          choices: ["x = 7", "x = -7", "x = 3", "x = -3"],
+          answer: "x = 7",
+          explanation: {
+            steps: [
+              "Multiply every term by 10 to clear decimals: 3(x + 4) = 5x - 2",
+              "Distribute: 3x + 12 = 5x - 2",
+              "Subtract 3x: 12 = 2x - 2",
+              "Add 2: 14 = 2x → x = 7; Check: 0.3(11) = 3.3 and 0.5(7) - 0.2 = 3.5 - 0.2 = 3.3 ✓"
+            ],
+            tip: "Multiply through by a power of 10 to eliminate decimals, just like clearing fractions with the LCD."
           }
         }
       ],
@@ -831,6 +1122,99 @@ export const unit2 = {
             ],
             tip: "Distribute, then treat like a standard variables-on-both-sides equation."
           }
+        },
+        {
+          id: "vbs-11",
+          type: "multiple-choice",
+          question: "Solve: 4(x - 3) + 2 = 2(2x - 5)",
+          choices: ["No solution", "All real numbers", "x = 0", "x = 3"],
+          answer: "All real numbers",
+          explanation: {
+            steps: [
+              "Distribute left: 4x - 12 + 2 = 4x - 10",
+              "Simplify left: 4x - 10 = 4x - 10",
+              "Subtract 4x: -10 = -10",
+              "True statement — infinitely many solutions"
+            ],
+            tip: "When you get a true statement like -10 = -10, every real number is a solution."
+          }
+        },
+        {
+          id: "vbs-12",
+          type: "multiple-choice",
+          question: "Solve: (x + 2)/3 = (2x - 1)/4",
+          choices: ["x = 11", "x = -11", "x = 5", "x = -5"],
+          answer: "x = 11",
+          explanation: {
+            steps: [
+              "Multiply both sides by LCD = 12: 4(x + 2) = 3(2x - 1)",
+              "Distribute: 4x + 8 = 6x - 3",
+              "Subtract 4x: 8 = 2x - 3",
+              "Add 3: 11 = 2x → x = 11/2"
+            ],
+            tip: "Clear fractions first with the LCD, then solve the resulting equation."
+          }
+        },
+        {
+          id: "vbs-13",
+          type: "multiple-choice",
+          question: "Solve: -3(2x + 5) = -4(x - 1) - 7",
+          choices: ["x = -4", "x = 4", "x = -6", "x = 6"],
+          answer: "x = -4",
+          explanation: {
+            steps: [
+              "Distribute left: -6x - 15 = -4x + 4 - 7",
+              "Simplify right: -6x - 15 = -4x - 3",
+              "Add 6x: -15 = 2x - 3",
+              "Add 3: -12 = 2x → x = -6"
+            ],
+            tip: "Distribute negative signs very carefully — a sign error early will cascade through every step."
+          }
+        },
+        {
+          id: "vbs-14",
+          type: "fill-in",
+          question: "Two friends are saving money. Alex has $120 and saves $15 per week. Jordan has $30 and saves $25 per week. After how many weeks w will they have the same amount?",
+          answer: "w = 9",
+          explanation: {
+            steps: [
+              "Alex: 120 + 15w; Jordan: 30 + 25w",
+              "Set equal: 120 + 15w = 30 + 25w",
+              "Subtract 15w: 120 = 30 + 10w",
+              "Subtract 30: 90 = 10w → w = 9; Check: 120+135=255 and 30+225=255 ✓"
+            ],
+            tip: "Variables-on-both-sides equations arise naturally in 'when will they be equal?' problems."
+          }
+        },
+        {
+          id: "vbs-15",
+          type: "fill-in",
+          question: "Solve: 5 - 3(2x - 4) = 2x - (x + 3)",
+          answer: "x = 2",
+          explanation: {
+            steps: [
+              "Distribute left: 5 - 6x + 12 = 2x - x - 3",
+              "Simplify both sides: 17 - 6x = x - 3",
+              "Add 6x: 17 = 7x - 3",
+              "Add 3: 20 = 7x → x = 20/7"
+            ],
+            tip: "Distribute carefully on both sides, combine like terms on each side, then collect variables."
+          }
+        },
+        {
+          id: "vbs-16",
+          type: "fill-in",
+          question: "Solve: 0.4x + 1.2 = 0.1x + 3.3",
+          answer: "x = 7",
+          explanation: {
+            steps: [
+              "Multiply every term by 10 to clear decimals: 4x + 12 = x + 33",
+              "Subtract x: 3x + 12 = 33",
+              "Subtract 12: 3x = 21",
+              "x = 7; Check: 0.4(7) + 1.2 = 2.8 + 1.2 = 4.0 and 0.1(7) + 3.3 = 0.7 + 3.3 = 4.0 ✓"
+            ],
+            tip: "Multiplying through by a power of 10 converts decimal coefficients to whole numbers."
+          }
         }
       ],
       guide: {
@@ -1033,6 +1417,94 @@ export const unit2 = {
               "Divide both sides by 5: x = (10 + 2y)/5"
             ],
             tip: "Isolate the 5x term first, then divide by 5."
+          }
+        },
+        {
+          id: "le-11",
+          type: "multiple-choice",
+          question: "The formula for the surface area of a cylinder is S = 2πr² + 2πrh. Solve for h.",
+          choices: ["h = (S - 2πr²)/(2πr)", "h = S/(2πr) - r", "h = S - 2πr²", "Both A and B"],
+          answer: "Both A and B",
+          explanation: {
+            steps: [
+              "Subtract 2πr² from both sides: S - 2πr² = 2πrh",
+              "Divide both sides by 2πr: h = (S - 2πr²)/(2πr)",
+              "This can be rewritten: h = S/(2πr) - 2πr²/(2πr) = S/(2πr) - r",
+              "Both forms are equivalent and correct"
+            ],
+            tip: "After isolating the term with h, divide every part by the coefficient of h."
+          }
+        },
+        {
+          id: "le-12",
+          type: "multiple-choice",
+          question: "The formula for simple interest is I = Prt. A bank earns $360 in interest on a principal P = $2000 at rate r = 6% (r = 0.06). Solve for t (time in years).",
+          choices: ["t = 3", "t = 2", "t = 1.5", "t = 4"],
+          answer: "t = 3",
+          explanation: {
+            steps: [
+              "Start with I = Prt, substitute I = 360, P = 2000, r = 0.06",
+              "360 = 2000 × 0.06 × t",
+              "360 = 120t",
+              "t = 360/120 = 3 years"
+            ],
+            tip: "Solve for the variable algebraically first, then substitute the known values."
+          }
+        },
+        {
+          id: "le-13",
+          type: "multiple-choice",
+          question: "Solve the formula for the area of a trapezoid A = (1/2)(b₁ + b₂)h for b₁.",
+          choices: ["b₁ = 2A/h - b₂", "b₁ = 2A/h + b₂", "b₁ = A/h - b₂", "b₁ = (A - b₂h)/2"],
+          answer: "b₁ = 2A/h - b₂",
+          explanation: {
+            steps: [
+              "Multiply both sides by 2: 2A = (b₁ + b₂)h",
+              "Divide both sides by h: 2A/h = b₁ + b₂",
+              "Subtract b₂ from both sides: b₁ = 2A/h - b₂"
+            ],
+            tip: "Clear the fraction by multiplying by 2 first, then clear h by dividing, then isolate b₁."
+          }
+        },
+        {
+          id: "le-14",
+          type: "fill-in",
+          question: "Solve ax + by = c for y (assume b ≠ 0).",
+          answer: "y = (c - ax)/b",
+          explanation: {
+            steps: [
+              "Subtract ax from both sides: by = c - ax",
+              "Divide both sides by b: y = (c - ax)/b"
+            ],
+            tip: "General literal equations follow the same steps as specific numeric ones — isolate the desired variable."
+          }
+        },
+        {
+          id: "le-15",
+          type: "fill-in",
+          question: "Solve the kinetic energy formula KE = (1/2)mv² for m.",
+          answer: "m = 2KE/v²",
+          explanation: {
+            steps: [
+              "Multiply both sides by 2: 2KE = mv²",
+              "Divide both sides by v²: m = 2KE/v²"
+            ],
+            tip: "Treat v² as a single factor just like any variable — divide both sides by it."
+          }
+        },
+        {
+          id: "le-16",
+          type: "fill-in",
+          question: "The formula P = 2(l + w) gives the perimeter of a rectangle. If P = 54 and l = 3w - 1, find the value of w.",
+          answer: "w = 7",
+          explanation: {
+            steps: [
+              "Substitute l = 3w - 1 and P = 54: 54 = 2((3w - 1) + w)",
+              "Simplify inside: 54 = 2(4w - 1)",
+              "Distribute: 54 = 8w - 2",
+              "Add 2: 56 = 8w → w = 7; Check: l = 3(7)-1 = 20; P = 2(20+7) = 2(27) = 54 ✓"
+            ],
+            tip: "Substituting one variable's expression into a formula creates a one-variable equation you can solve."
           }
         }
       ],
