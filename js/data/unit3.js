@@ -190,6 +190,118 @@ export const unit3 = {
             ],
             tip: "Dividing by negative five flips ≤ to ≥."
           }
+        },
+        {
+          id: "osi-11",
+          type: "multiple-choice",
+          question: "Solve: (3/4)x ≤ -9",
+          choices: ["x ≤ -12", "x ≤ -6.75", "x ≥ -12", "x ≥ 12"],
+          answer: "x ≤ -12",
+          explanation: {
+            steps: [
+              "Multiply both sides by 4/3 (the reciprocal of 3/4; positive, so no flip)",
+              "x ≤ -9 × (4/3) = -36/3 = -12",
+              "Check with x = -12: (3/4)(-12) = -9 ≤ -9 ✓"
+            ],
+            tip: "Multiplying by a positive reciprocal to clear a fraction does NOT flip the inequality."
+          }
+        },
+        {
+          id: "osi-12",
+          type: "multiple-choice",
+          question: "Solve: x/(-5) < -3",
+          choices: ["x > 15", "x < 15", "x > -15", "x < -15"],
+          answer: "x > 15",
+          explanation: {
+            steps: [
+              "Multiply both sides by -5 — FLIP!",
+              "x > (-3)(-5)",
+              "x > 15",
+              "Check with x = 20: 20/(-5) = -4 < -3 ✓"
+            ],
+            tip: "Multiplying by a negative number — including a negative denominator — flips the inequality."
+          }
+        },
+        {
+          id: "osi-13",
+          type: "multiple-choice",
+          question: "A student solves -4x ≥ 20 and writes x ≥ -5. What is the correct answer and what was the error?",
+          choices: [
+            "x ≤ -5; the student forgot to flip the inequality when dividing by -4",
+            "x ≥ -5; the student is correct",
+            "x ≤ 5; the student divided incorrectly",
+            "x ≥ 5; the student flipped incorrectly"
+          ],
+          answer: "x ≤ -5; the student forgot to flip the inequality when dividing by -4",
+          explanation: {
+            steps: [
+              "Divide both sides by -4 — must FLIP the inequality!",
+              "-4x ÷ (-4) ≤ 20 ÷ (-4)",
+              "x ≤ -5",
+              "The student wrote ≥ instead of ≤ — forgot to flip when dividing by a negative"
+            ],
+            tip: "Every single time you divide or multiply by a negative, the inequality symbol reverses direction."
+          }
+        },
+        {
+          id: "osi-14",
+          type: "fill-in",
+          question: "Solve: -2/3 x > 8. Write the answer as an inequality and in interval notation.",
+          answer: "x < -12; (-∞, -12)",
+          explanation: {
+            steps: [
+              "Multiply both sides by -3/2 (the reciprocal of -2/3) — FLIP!",
+              "x < 8 × (-3/2) = -24/2 = -12",
+              "Inequality: x < -12",
+              "Interval notation: (-∞, -12)"
+            ],
+            tip: "The reciprocal of a negative fraction is still negative — so you must flip."
+          }
+        },
+        {
+          id: "osi-15",
+          type: "fill-in",
+          question: "A delivery truck can carry at most 2400 pounds. Each box weighs 75 pounds. Write and solve an inequality for the maximum number of boxes b the truck can carry.",
+          answer: "b ≤ 32",
+          explanation: {
+            steps: [
+              "Weight of b boxes: 75b",
+              "Must be at most 2400: 75b ≤ 2400",
+              "Divide both sides by 75 (positive — no flip): b ≤ 32",
+              "The truck can carry at most 32 boxes"
+            ],
+            tip: "'At most' means less than or equal to (≤); 'at least' means greater than or equal to (≥)."
+          }
+        },
+        {
+          id: "osi-16",
+          type: "fill-in",
+          question: "Write the inequality in interval notation: x ≥ -7",
+          answer: "[-7, ∞)",
+          explanation: {
+            steps: [
+              "x ≥ -7 means x can equal -7, so -7 is included → use a square bracket: [-7",
+              "x extends to positive infinity → use a parenthesis: ∞)",
+              "Interval notation: [-7, ∞)"
+            ],
+            tip: "Infinity is never 'reached', so always use a parenthesis next to ∞ or -∞."
+          }
+        },
+        {
+          id: "osi-17",
+          type: "multiple-choice",
+          question: "Solve: -x ≥ -9",
+          choices: ["x ≤ 9", "x ≥ 9", "x ≤ -9", "x ≥ -9"],
+          answer: "x ≤ 9",
+          explanation: {
+            steps: [
+              "-x means -1 · x, so we have -1 · x ≥ -9",
+              "Divide both sides by -1 — FLIP!",
+              "x ≤ 9",
+              "Check x = 9: -9 ≥ -9 ✓; check x = 10: -10 ≥ -9? No ✓"
+            ],
+            tip: "-x has coefficient -1. Dividing by -1 to get x requires flipping the inequality."
+          }
         }
       ],
       guide: {
@@ -357,7 +469,7 @@ export const unit3 = {
           id: "msi-8",
           type: "fill-in",
           question: "Solve: 3(x + 4) - 6 > 9",
-          answer: "x > -1",
+          answer: "x > 1",
           explanation: {
             steps: [
               "Distribute: 3x + 12 - 6 > 9",
@@ -396,6 +508,115 @@ export const unit3 = {
               "Check x = 0: -3(0-2) = 6 ≤ 12 ✓"
             ],
             tip: "Distributing a negative changes signs inside but doesn't flip the inequality — only dividing both sides by a negative does."
+          }
+        },
+        {
+          id: "msi-11",
+          type: "multiple-choice",
+          question: "Solve: 4 - 2(x + 3) > -6",
+          choices: ["x < 2", "x > 2", "x < -2", "x > -2"],
+          answer: "x < 2",
+          explanation: {
+            steps: [
+              "Distribute: 4 - 2x - 6 > -6",
+              "Combine constants: -2x - 2 > -6",
+              "Add 2: -2x > -4",
+              "Divide by -2 — FLIP!: x < 2; Check x = 0: 4-2(3)=-2 > -6 ✓"
+            ],
+            tip: "Distribute the negative into the parentheses, then handle the inequality steps."
+          }
+        },
+        {
+          id: "msi-12",
+          type: "multiple-choice",
+          question: "Solve: 3(2x - 1) ≥ 4(x + 2) - 3",
+          choices: ["x ≥ 4", "x ≥ 2", "x ≤ 4", "x ≤ 2"],
+          answer: "x ≥ 4",
+          explanation: {
+            steps: [
+              "Distribute both sides: 6x - 3 ≥ 4x + 8 - 3",
+              "Simplify right side: 6x - 3 ≥ 4x + 5",
+              "Subtract 4x: 2x - 3 ≥ 5",
+              "Add 3: 2x ≥ 8 → x ≥ 4; Check x = 4: 3(7)=21 ≥ 4(6)-3=21 ✓"
+            ],
+            tip: "Distribute all parentheses first, then collect variable terms on one side."
+          }
+        },
+        {
+          id: "msi-13",
+          type: "multiple-choice",
+          question: "A phone plan costs $25 per month plus $0.10 per text message. You want to spend less than $40 per month. What is the maximum number of text messages t you can send?",
+          choices: ["t < 150", "t ≤ 150", "t < 400", "t ≤ 400"],
+          answer: "t < 150",
+          explanation: {
+            steps: [
+              "Set up: 25 + 0.10t < 40",
+              "Subtract 25: 0.10t < 15",
+              "Divide by 0.10: t < 150",
+              "You can send fewer than 150 texts (149 or less)"
+            ],
+            tip: "'Less than $40' is a strict inequality (<), not ≤ — do not include the boundary."
+          }
+        },
+        {
+          id: "msi-14",
+          type: "fill-in",
+          question: "Solve: (x/2) - 3 ≥ (x/4) + 1",
+          answer: "x ≥ 16",
+          explanation: {
+            steps: [
+              "Multiply all terms by LCD = 4: 4(x/2) - 4(3) ≥ 4(x/4) + 4(1)",
+              "Simplify: 2x - 12 ≥ x + 4",
+              "Subtract x: x - 12 ≥ 4",
+              "Add 12: x ≥ 16; Check x = 16: 8 - 3 = 5 ≥ 4 + 1 = 5 ✓"
+            ],
+            tip: "Clear fractions first with the LCD, then solve the resulting inequality like normal."
+          }
+        },
+        {
+          id: "msi-15",
+          type: "fill-in",
+          question: "Solve: -2(3 - x) < 4(x - 1)",
+          answer: "x > -1",
+          explanation: {
+            steps: [
+              "Distribute left: -6 + 2x < 4x - 4",
+              "Subtract 2x: -6 < 2x - 4",
+              "Add 4: -2 < 2x",
+              "Divide by 2 (positive — no flip): -1 < x, or x > -1; Check x = 0: -2(3)<4(-1) → -6<-4 ✓"
+            ],
+            tip: "After distributing negatives, collect variable terms on the side with the larger coefficient to avoid dividing by a negative."
+          }
+        },
+        {
+          id: "msi-16",
+          type: "fill-in",
+          question: "Solve: 5 - (2x + 3) ≤ 3x - (x - 4)",
+          answer: "x ≥ -1",
+          explanation: {
+            steps: [
+              "Distribute the negatives: 5 - 2x - 3 ≤ 3x - x + 4",
+              "Simplify both sides: 2 - 2x ≤ 2x + 4",
+              "Add 2x: 2 ≤ 4x + 4",
+              "Subtract 4: -2 ≤ 4x → divide by 4 (positive): -1/2 ≤ x, or x ≥ -1/2"
+            ],
+            tip: "Remove parentheses by distributing first, then simplify each side before moving terms."
+          }
+        },
+        {
+          id: "msi-17",
+          type: "multiple-choice",
+          question: "Solve: -(x + 4) ≥ 2(x - 1) + 3",
+          choices: ["x ≤ -3", "x ≥ -3", "x ≤ 3", "x ≥ 3"],
+          answer: "x ≤ -3",
+          explanation: {
+            steps: [
+              "Distribute left: -x - 4 ≥ 2x - 2 + 3",
+              "Simplify right: -x - 4 ≥ 2x + 1",
+              "Subtract 2x: -3x - 4 ≥ 1",
+              "Add 4: -3x ≥ 5 → divide by -3 FLIP: x ≤ -5/3"
+            ],
+            tip: "Each time you distribute a negative sign, verify every sign inside the parentheses changed."
           }
         }
       ],
@@ -604,6 +825,113 @@ export const unit3 = {
             ],
             tip: "When dividing a compound inequality by a negative, flip BOTH inequality symbols."
           }
+        },
+        {
+          id: "ci-11",
+          type: "multiple-choice",
+          question: "Solve: -3 < 2x + 5 ≤ 11",
+          choices: ["-4 < x ≤ 3", "-4 ≤ x < 3", "-1 < x ≤ 8", "-1 ≤ x < 8"],
+          answer: "-4 < x ≤ 3",
+          explanation: {
+            steps: [
+              "Subtract 5 from all parts: -8 < 2x ≤ 6",
+              "Divide all parts by 2 (positive — no flip): -4 < x ≤ 3",
+              "Check x = 0: -3 < 5 ≤ 11 ✓; check x = 3: -3 < 11 ≤ 11 ✓"
+            ],
+            tip: "Apply each operation to all three parts; dividing by a positive 2 does not flip."
+          }
+        },
+        {
+          id: "ci-12",
+          type: "multiple-choice",
+          question: "Solve: 4x - 1 ≤ 7 AND 2x + 3 > 1",
+          choices: ["-1 < x ≤ 2", "x ≤ 2 OR x > -1", "x ≤ 2", "-1 < x < 2"],
+          answer: "-1 < x ≤ 2",
+          explanation: {
+            steps: [
+              "Solve first: 4x - 1 ≤ 7 → 4x ≤ 8 → x ≤ 2",
+              "Solve second: 2x + 3 > 1 → 2x > -2 → x > -1",
+              "Intersection: x > -1 AND x ≤ 2 → -1 < x ≤ 2",
+              "Check x = 0: 4(0)-1=-1 ≤ 7 ✓ and 2(0)+3=3 > 1 ✓"
+            ],
+            tip: "For 'and' compound inequalities written as two separate inequalities, solve each and find the overlap."
+          }
+        },
+        {
+          id: "ci-13",
+          type: "multiple-choice",
+          question: "Solve: -2(x + 1) < 4 OR 3(x - 2) ≥ 9",
+          choices: ["x > -3 OR x ≥ 5", "x > -3 OR x > 5", "x < -3 OR x ≥ 5", "x > -3"],
+          answer: "x > -3 OR x ≥ 5",
+          explanation: {
+            steps: [
+              "Solve first: -2(x+1) < 4 → -2x - 2 < 4 → -2x < 6 → x > -3 (flip!)",
+              "Solve second: 3(x-2) ≥ 9 → 3x - 6 ≥ 9 → 3x ≥ 15 → x ≥ 5",
+              "Union: x > -3 OR x ≥ 5",
+              "Since x > -3 includes all numbers greater than -3, and x ≥ 5 is a subset, the union is x > -3"
+            ],
+            tip: "For 'or' inequalities, the union may simplify if one solution contains the other."
+          }
+        },
+        {
+          id: "ci-14",
+          type: "fill-in",
+          question: "Solve: -6 ≤ -3(x - 2) ≤ 9",
+          answer: "-1 ≤ x ≤ 4",
+          explanation: {
+            steps: [
+              "Divide all parts by -3 — FLIP both symbols!: 2 ≥ (x - 2) ≥ -3",
+              "Rewrite as standard compound: -3 ≤ x - 2 ≤ 2",
+              "Add 2 to all parts: -1 ≤ x ≤ 4",
+              "Check x = 0: -6 ≤ -3(0-2)=6 ≤ 9? No — 6 ≤ 9 ✓ but -6 ≤ 6 ✓"
+            ],
+            tip: "When the expression inside is negative, divide first then add to isolate the variable."
+          }
+        },
+        {
+          id: "ci-15",
+          type: "fill-in",
+          question: "Write the interval notation for the solution to x < -4 OR x ≥ 1.",
+          answer: "(-∞, -4) ∪ [1, ∞)",
+          explanation: {
+            steps: [
+              "x < -4: starts at -∞ (use parenthesis), up to but not including -4 (use parenthesis): (-∞, -4)",
+              "x ≥ 1: starts at 1 (included, use bracket), extends to ∞ (use parenthesis): [1, ∞)",
+              "Union of the two sets: (-∞, -4) ∪ [1, ∞)"
+            ],
+            tip: "The union symbol ∪ is used in interval notation to connect 'or' solutions."
+          }
+        },
+        {
+          id: "ci-16",
+          type: "fill-in",
+          question: "The temperature T (in °F) inside a storage unit must stay between 32°F and 86°F, inclusive. Write this as a compound inequality and solve for T in Celsius using C = (5/9)(T - 32).",
+          answer: "0 ≤ C ≤ 30",
+          explanation: {
+            steps: [
+              "Temperature constraint: 32 ≤ T ≤ 86",
+              "Substitute T = (9/5)C + 32: 32 ≤ (9/5)C + 32 ≤ 86",
+              "Subtract 32 from all parts: 0 ≤ (9/5)C ≤ 54",
+              "Multiply all parts by 5/9: 0 ≤ C ≤ 30"
+            ],
+            tip: "Apply the same inverse operations to all parts of the compound inequality — including substituting a formula."
+          }
+        },
+        {
+          id: "ci-17",
+          type: "multiple-choice",
+          question: "Solve: 1 ≤ (4 - x)/3 ≤ 5",
+          choices: ["-11 ≤ x ≤ 1", "1 ≤ x ≤ 11", "-1 ≤ x ≤ 11", "-11 ≤ x ≤ -1"],
+          answer: "-11 ≤ x ≤ 1",
+          explanation: {
+            steps: [
+              "Multiply all parts by 3 (positive — no flip): 3 ≤ 4 - x ≤ 15",
+              "Subtract 4 from all parts: -1 ≤ -x ≤ 11",
+              "Multiply all parts by -1 — FLIP both symbols!: 1 ≥ x ≥ -11",
+              "Rewrite in standard order: -11 ≤ x ≤ 1"
+            ],
+            tip: "Multiplying the entire compound inequality by -1 to isolate x flips both inequality symbols."
+          }
         }
       ],
       guide: {
@@ -811,6 +1139,116 @@ export const unit3 = {
               "Check: |5-2|=3 ✓ and |5-8|=|-3|=3 ✓"
             ],
             tip: "The expression inside can be in any order — split into both positive and negative cases."
+          }
+        },
+        {
+          id: "av-11",
+          type: "multiple-choice",
+          question: "Solve: |3x + 2| - 4 = 10",
+          choices: ["x = 4 or x = -16/3", "x = 8 or x = -8", "x = 4 or x = -16", "no solution"],
+          answer: "x = 4 or x = -16/3",
+          explanation: {
+            steps: [
+              "Isolate the absolute value: add 4 to both sides → |3x + 2| = 14",
+              "Case 1: 3x + 2 = 14 → 3x = 12 → x = 4",
+              "Case 2: 3x + 2 = -14 → 3x = -16 → x = -16/3",
+              "Check: |3(4)+2|=|14|=14 ✓ and |3(-16/3)+2|=|-16+2|=|-14|=14 ✓"
+            ],
+            tip: "Always isolate the absolute value expression before splitting into two cases."
+          }
+        },
+        {
+          id: "av-12",
+          type: "multiple-choice",
+          question: "Solve: |2x - 3| ≤ 7",
+          choices: ["-2 ≤ x ≤ 5", "x ≤ 5 or x ≥ -2", "-5 ≤ x ≤ 2", "x ≤ -2 or x ≥ 5"],
+          answer: "-2 ≤ x ≤ 5",
+          explanation: {
+            steps: [
+              "|2x - 3| ≤ 7 → -7 ≤ 2x - 3 ≤ 7",
+              "Add 3 to all parts: -4 ≤ 2x ≤ 10",
+              "Divide all parts by 2: -2 ≤ x ≤ 5",
+              "Check x = 0: |0-3|=3 ≤ 7 ✓"
+            ],
+            tip: "Less-than absolute value creates a 'between' compound inequality."
+          }
+        },
+        {
+          id: "av-13",
+          type: "multiple-choice",
+          question: "Solve: |4 - x| > 2",
+          choices: ["x < 2 or x > 6", "2 < x < 6", "x < -6 or x > -2", "x < -2 or x > 6"],
+          answer: "x < 2 or x > 6",
+          explanation: {
+            steps: [
+              "|4 - x| > 2 splits into: 4 - x > 2 OR 4 - x < -2",
+              "Case 1: -x > -2 → x < 2 (flip when dividing by -1)",
+              "Case 2: -x < -6 → x > 6 (flip)",
+              "Check x = 0: |4-0|=4 > 2 ✓; check x = 7: |4-7|=3 > 2 ✓"
+            ],
+            tip: "Subtract from both cases and flip when dividing by -1 to isolate x."
+          }
+        },
+        {
+          id: "av-14",
+          type: "fill-in",
+          question: "Solve: 2|x + 3| - 5 = 9",
+          answer: "x = 4 or x = -10",
+          explanation: {
+            steps: [
+              "Add 5: 2|x + 3| = 14",
+              "Divide by 2: |x + 3| = 7",
+              "Case 1: x + 3 = 7 → x = 4",
+              "Case 2: x + 3 = -7 → x = -10",
+              "Check: 2|7|-5=14-5=9 ✓ and 2|-7|-5=14-5=9 ✓"
+            ],
+            tip: "Isolate the absolute value completely (including clearing any multiplying factor) before splitting."
+          }
+        },
+        {
+          id: "av-15",
+          type: "fill-in",
+          question: "Solve: |x/2 - 1| > 3. Write in interval notation.",
+          answer: "(-∞, -4) ∪ (8, ∞)",
+          explanation: {
+            steps: [
+              "Split: x/2 - 1 > 3 OR x/2 - 1 < -3",
+              "Case 1: x/2 > 4 → x > 8",
+              "Case 2: x/2 < -2 → x < -4",
+              "Interval notation: (-∞, -4) ∪ (8, ∞)"
+            ],
+            tip: "Greater-than absolute value gives two outward rays — write as a union in interval notation."
+          }
+        },
+        {
+          id: "av-16",
+          type: "fill-in",
+          question: "A manufacturer requires that a bolt's diameter d be within 0.02 mm of the target of 5 mm. Write and solve an absolute value inequality for acceptable bolt diameters.",
+          answer: "4.98 ≤ d ≤ 5.02",
+          explanation: {
+            steps: [
+              "'Within 0.02 of 5' means |d - 5| ≤ 0.02",
+              "Rewrite as compound: -0.02 ≤ d - 5 ≤ 0.02",
+              "Add 5 to all parts: 4.98 ≤ d ≤ 5.02",
+              "Bolt must be between 4.98 mm and 5.02 mm inclusive"
+            ],
+            tip: "'Within k of a target t' translates directly to |variable - t| ≤ k."
+          }
+        },
+        {
+          id: "av-17",
+          type: "multiple-choice",
+          question: "Solve: |5x - 10| = |2x + 1|",
+          choices: ["x = 3 or x = 1", "x = 3 or x = -1", "x = 3 or x = 11/7", "x = 11/7 only"],
+          answer: "x = 3 or x = 11/7",
+          explanation: {
+            steps: [
+              "When two absolute values are equal, either the expressions are equal or they are opposites",
+              "Case 1: 5x - 10 = 2x + 1 → 3x = 11 → x = 11/3",
+              "Case 2: 5x - 10 = -(2x + 1) → 5x - 10 = -2x - 1 → 7x = 9 → x = 9/7",
+              "Check both in original equation"
+            ],
+            tip: "When |A| = |B|, either A = B or A = -B — you get exactly two cases to solve."
           }
         }
       ],
