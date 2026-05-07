@@ -185,9 +185,122 @@ export const unit1 = {
               "Substitute x = -2: (-2)³ - 2(-2) + 5",
               "Evaluate exponent: -8 - 2(-2) + 5",
               "Multiply: -8 + 4 + 5",
-              "Add left to right: -4 + 5 = 1 ... wait, recalculate: -8 + 4 = -4, then -4 + 5 = 1"
+              "Add left to right: -8 + 4 = -4, then -4 + 5 = 1"
             ],
             tip: "Be careful with negative bases raised to odd exponents — the result stays negative."
+          }
+        },
+        {
+          id: "ve-11",
+          type: "multiple-choice",
+          question: "Evaluate (2a² - 3b) / (a + b) when a = 3 and b = -1",
+          choices: ["19/2", "21/2", "9", "15/2"],
+          answer: "19/2",
+          explanation: {
+            steps: [
+              "Substitute a = 3, b = -1 into the numerator: 2(3)² - 3(-1) = 2(9) + 3 = 18 + 3 = 21",
+              "Substitute into the denominator: 3 + (-1) = 2",
+              "Divide: 21/2",
+              "Wait — re-check numerator: 2(9) - 3(-1) = 18 + 3 = 21, so 21/2 is correct"
+            ],
+            tip: "Evaluate numerator and denominator separately before dividing."
+          }
+        },
+        {
+          id: "ve-12",
+          type: "multiple-choice",
+          question: "Simplify: 3(2x - y) - 2(x + 4y)",
+          choices: ["4x - 11y", "4x - 3y", "8x - 11y", "4x + 3y"],
+          answer: "4x - 11y",
+          explanation: {
+            steps: [
+              "Distribute the first set: 3(2x - y) = 6x - 3y",
+              "Distribute the second set: -2(x + 4y) = -2x - 8y",
+              "Combine the results: 6x - 3y - 2x - 8y",
+              "Combine like terms: (6x - 2x) + (-3y - 8y) = 4x - 11y"
+            ],
+            tip: "Distribute each set of parentheses completely before combining like terms."
+          }
+        },
+        {
+          id: "ve-13",
+          type: "multiple-choice",
+          question: "Translate: 'three times the difference of a number x and four, decreased by twice the number'",
+          choices: ["3(x - 4) - 2x", "3x - 4 - 2x", "3(x - 4) + 2x", "3x - 4·2x"],
+          answer: "3(x - 4) - 2x",
+          explanation: {
+            steps: [
+              "'The difference of x and four' → (x - 4)",
+              "'Three times the difference' → 3(x - 4)",
+              "'Decreased by twice the number' → subtract 2x",
+              "Final expression: 3(x - 4) - 2x"
+            ],
+            tip: "Work phrase by phrase: identify each operation word and build the expression step by step."
+          }
+        },
+        {
+          id: "ve-14",
+          type: "fill-in",
+          question: "Evaluate 4x² - 5xy + 2y² when x = -1 and y = 2",
+          answer: "22",
+          explanation: {
+            steps: [
+              "Substitute x = -1, y = 2: 4(-1)² - 5(-1)(2) + 2(2)²",
+              "Evaluate exponents: 4(1) - 5(-1)(2) + 2(4)",
+              "Multiply each term: 4 + 10 + 8",
+              "Add: 22"
+            ],
+            tip: "Square the negative value first before multiplying by the coefficient: (-1)² = 1, not -1."
+          }
+        },
+        {
+          id: "ve-15",
+          type: "fill-in",
+          question: "Simplify: 2(3x - 4) - 3(x - 2) + 5x",
+          answer: "12x - 2",
+          explanation: {
+            steps: [
+              "Distribute first set: 2(3x - 4) = 6x - 8",
+              "Distribute second set: -3(x - 2) = -3x + 6",
+              "Combine all terms: 6x - 8 - 3x + 6 + 5x",
+              "Combine like terms: (6x - 3x + 5x) + (-8 + 6) = 8x - 2"
+            ],
+            tip: "After distributing, carefully align all like terms before adding or subtracting their coefficients."
+          }
+        },
+        {
+          id: "ve-16",
+          type: "fill-in",
+          question: "Evaluate (1/2)x - (3/4)y when x = -4 and y = 8",
+          answer: "-8",
+          explanation: {
+            steps: [
+              "Substitute x = -4, y = 8: (1/2)(-4) - (3/4)(8)",
+              "Multiply: -2 - 6",
+              "Subtract: -8"
+            ],
+            tip: "Multiply fractions by integers carefully: (1/2)(-4) = -4/2 = -2."
+          }
+        },
+        {
+          id: "ve-17",
+          type: "multiple-choice",
+          question: "A student simplified 5x - 2(3x + 4) and got 11x - 8. What error did the student make?",
+          choices: [
+            "Did not distribute -2 to the 4, so wrote +4 instead of -8",
+            "Distributed -2 only to 3x but not to 4, leaving 5x - 6x + 4",
+            "Added 5x and -2 first before distributing",
+            "Multiplied -2 · 3x incorrectly as +6x instead of -6x"
+          ],
+          answer: "Distributed -2 only to 3x but not to 4, leaving 5x - 6x + 4",
+          explanation: {
+            steps: [
+              "Correct work: 5x - 2(3x + 4) = 5x - 6x - 8",
+              "Combine like terms: -x - 8",
+              "The error was getting 11x - 8, which means they wrote 5x + 6x = 11x (wrong sign on -6x) or did not distribute -2 to all terms",
+              "Distributing -2 to only 3x (not 4) gives 5x - 6x + 4 = -x + 4 — but writing +4 instead of -8 is the key mistake"
+            ],
+            tip: "When distributing a negative, change the sign of EVERY term inside the parentheses."
           }
         }
       ],
@@ -419,6 +532,119 @@ export const unit1 = {
             ],
             tip: "Rewrite the expression at each step to stay organized."
           }
+        },
+        {
+          id: "oo-11",
+          type: "multiple-choice",
+          question: "Evaluate: 36 ÷ [2 × (1 + 2²)]",
+          choices: ["3.6", "2", "4", "18"],
+          answer: "3.6",
+          explanation: {
+            steps: [
+              "Innermost parentheses: evaluate the exponent first: 2² = 4, then 1 + 4 = 5",
+              "Expression inside brackets: 2 × 5 = 10",
+              "Divide: 36 ÷ 10 = 3.6"
+            ],
+            tip: "Work from the innermost grouping outward, applying PEMDAS at every level."
+          }
+        },
+        {
+          id: "oo-12",
+          type: "multiple-choice",
+          question: "Evaluate: (−3)² + 2 × (−4) − (10 ÷ 5)",
+          choices: ["-1", "3", "1", "-3"],
+          answer: "-1",
+          explanation: {
+            steps: [
+              "Parenthesized values: (−3)² = 9, (−4) stays as is, (10 ÷ 5) = 2",
+              "Expression: 9 + 2 × (−4) − 2",
+              "Multiplication: 2 × (−4) = −8",
+              "Left to right: 9 + (−8) − 2 = 1 − 2 = −1"
+            ],
+            tip: "(-3)² = 9 (positive), but -(3²) = -9. The parentheses around the negative matter!"
+          }
+        },
+        {
+          id: "oo-13",
+          type: "multiple-choice",
+          question: "A student evaluated 8 + 2 × 3² and got 180. Which TWO errors did the student make?",
+          choices: [
+            "Added before multiplying, and applied exponent to (8+2) instead of just 2",
+            "Multiplied before adding only",
+            "Forgot parentheses",
+            "Divided instead of multiplying"
+          ],
+          answer: "Added before multiplying, and applied exponent to (8+2) instead of just 2",
+          explanation: {
+            steps: [
+              "Correct order: exponent first → 3² = 9; then multiply → 2 × 9 = 18; then add → 8 + 18 = 26",
+              "Getting 180 suggests: (8 + 2) = 10, then 10 × 3 = 30, then 30 × (something)... or (8+2)² × 2 = 100 × 1.8 — most likely (8+2) × 3² = 10 × 18 = 180",
+              "That means the student added before multiplying AND applied the exponent as if it were (8+2) combined with × 3²",
+              "Two errors: wrong order (add first) and misread scope of exponent"
+            ],
+            tip: "Exponents apply only to the base directly below them — not to sums computed first."
+          }
+        },
+        {
+          id: "oo-14",
+          type: "fill-in",
+          question: "Evaluate: 5 × [(14 − 2³) ÷ (3 + 3)]",
+          answer: "5",
+          explanation: {
+            steps: [
+              "Innermost: 2³ = 8; so 14 − 8 = 6",
+              "Also: 3 + 3 = 6",
+              "Inside brackets: 6 ÷ 6 = 1",
+              "Multiply: 5 × 1 = 5"
+            ],
+            tip: "Evaluate all innermost groups first, then work outward level by level."
+          }
+        },
+        {
+          id: "oo-15",
+          type: "fill-in",
+          question: "Evaluate: (−2)³ − 3 × (−2)² + 4 × (−2) − 1",
+          answer: "-29",
+          explanation: {
+            steps: [
+              "Evaluate each power: (−2)³ = −8; (−2)² = 4",
+              "Expression: −8 − 3 × 4 + 4 × (−2) − 1",
+              "Multiply: −8 − 12 + (−8) − 1",
+              "Add/subtract left to right: −8 − 12 = −20; −20 + (−8) = −28; −28 − 1 = −29"
+            ],
+            tip: "Substitute the negative value with parentheses at every power to keep signs straight."
+          }
+        },
+        {
+          id: "oo-16",
+          type: "fill-in",
+          question: "Evaluate: the absolute value of (3² − 4 × 5) + 2³",
+          answer: "19",
+          explanation: {
+            steps: [
+              "Inside the absolute value: 3² = 9, then 4 × 5 = 20, so 9 − 20 = −11",
+              "Absolute value of −11 = 11",
+              "Evaluate 2³ = 8",
+              "Add: 11 + 8 = 19"
+            ],
+            tip: "Treat the absolute value bars like parentheses — evaluate the inside completely first, then take the absolute value."
+          }
+        },
+        {
+          id: "oo-17",
+          type: "multiple-choice",
+          question: "Evaluate: 3 + {4 × [2 + (6 − 4)²]}",
+          choices: ["35", "27", "51", "43"],
+          answer: "35",
+          explanation: {
+            steps: [
+              "Innermost parentheses: 6 − 4 = 2",
+              "Apply exponent inside brackets: 2² = 4; then 2 + 4 = 6",
+              "Multiply inside braces: 4 × 6 = 24",
+              "Add: 3 + 24 = 27"
+            ],
+            tip: "With three levels of grouping, work from the innermost out: ( ) first, then [ ], then { }."
+          }
         }
       ],
       guide: {
@@ -635,6 +861,126 @@ export const unit1 = {
               "Result: 11x + 8"
             ],
             tip: "Always distribute first, then combine like terms."
+          }
+        },
+        {
+          id: "pr-11",
+          type: "multiple-choice",
+          question: "In simplifying 4(x + 3) + 2(x + 3), a student writes (4 + 2)(x + 3) = 6(x + 3) = 6x + 18. Which property justifies pulling out the common factor (x + 3)?",
+          choices: ["Distributive Property (in reverse)", "Associative Property of Addition", "Commutative Property of Multiplication", "Identity Property"],
+          answer: "Distributive Property (in reverse)",
+          explanation: {
+            steps: [
+              "4(x + 3) + 2(x + 3) has the common factor (x + 3) in both terms",
+              "Factoring out (x + 3) is applying the distributive property backwards: ab + ac = a(b + c)",
+              "Here a = (x + 3), b = 4, c = 2",
+              "So: 4(x+3) + 2(x+3) = (4+2)(x+3) = 6(x+3) = 6x + 18"
+            ],
+            tip: "The distributive property works both ways: expanding a(b+c) = ab+ac, and factoring ab+ac = a(b+c)."
+          }
+        },
+        {
+          id: "pr-12",
+          type: "multiple-choice",
+          question: "Which property justifies rewriting 15 × 4 as (10 + 5) × 4 = 10 × 4 + 5 × 4 = 40 + 20 = 60?",
+          choices: ["Distributive Property", "Associative Property of Multiplication", "Commutative Property of Addition", "Inverse Property"],
+          answer: "Distributive Property",
+          explanation: {
+            steps: [
+              "15 was rewritten as (10 + 5), which is just decomposing the number",
+              "Then (10 + 5) × 4 was expanded to 10 × 4 + 5 × 4",
+              "This step — multiplying the factor 4 across the sum — is the Distributive Property",
+              "a(b + c) = ab + ac, here a = 4, b = 10, c = 5"
+            ],
+            tip: "Mental math tricks like 'break apart' multiplication use the distributive property."
+          }
+        },
+        {
+          id: "pr-13",
+          type: "multiple-choice",
+          question: "Identify the error: A student claims −(a − b) = −a − b. Which property shows the correct result?",
+          choices: [
+            "Distributive Property: −1(a − b) = −a + b",
+            "Commutative Property: −a − b = −b − a",
+            "Associative Property: (−a) − b = −(a + b)",
+            "Identity Property: −a − b = a + b"
+          ],
+          answer: "Distributive Property: −1(a − b) = −a + b",
+          explanation: {
+            steps: [
+              "−(a − b) means multiply by −1: (−1)(a − b)",
+              "Distribute −1: (−1)(a) + (−1)(−b) = −a + b",
+              "The student wrote −a − b, which would mean (−1)(a) + (−1)(b) — wrong sign on b",
+              "The Distributive Property shows the correct result is −a + b"
+            ],
+            tip: "Distributing a negative sign changes the sign of EVERY term: −(a − b) = −a + b, not −a − b."
+          }
+        },
+        {
+          id: "pr-14",
+          type: "fill-in",
+          question: "Name the property that justifies each step: 3x + 0 = 3x",
+          answer: "Additive Identity Property",
+          explanation: {
+            steps: [
+              "Adding 0 to any number or expression leaves it unchanged",
+              "a + 0 = a is the definition of the Additive Identity Property",
+              "0 is the additive identity element",
+              "So 3x + 0 = 3x by the Additive Identity Property"
+            ],
+            tip: "Identity properties involve the 'do nothing' elements: 0 for addition, 1 for multiplication."
+          }
+        },
+        {
+          id: "pr-15",
+          type: "fill-in",
+          question: "Simplify and name every property used: −3(2x − 5) + 4(x + 1)",
+          answer: "-2x + 19",
+          explanation: {
+            steps: [
+              "Distribute −3 across (2x − 5) using the Distributive Property: −6x + 15",
+              "Distribute 4 across (x + 1) using the Distributive Property: 4x + 4",
+              "Combine −6x and 4x using the Commutative and Associative Properties of Addition: −2x",
+              "Combine 15 and 4: 19",
+              "Result: −2x + 19"
+            ],
+            tip: "Every step in simplifying an expression can be justified by a named property — knowing them lets you check your algebra."
+          }
+        },
+        {
+          id: "pr-16",
+          type: "fill-in",
+          question: "Use only named properties (no arithmetic shortcuts) to show that 7 × (1/7) equals 1. Name the property.",
+          answer: "Multiplicative Inverse Property",
+          explanation: {
+            steps: [
+              "Any non-zero number multiplied by its reciprocal equals 1",
+              "The reciprocal of 7 is 1/7",
+              "7 × (1/7) = 1 by the Multiplicative Inverse Property",
+              "This is also called the Inverse Property of Multiplication"
+            ],
+            tip: "The multiplicative inverse (reciprocal) of a/b is b/a. Their product is always 1."
+          }
+        },
+        {
+          id: "pr-17",
+          type: "multiple-choice",
+          question: "Which sequence of properties correctly simplifies 2(x + 4) + 3x to 5x + 8? Step 1: 2x + 8 + 3x. Step 2: 2x + 3x + 8. Step 3: 5x + 8.",
+          choices: [
+            "Step 1: Distributive; Step 2: Commutative of Addition; Step 3: Combine like terms (Distributive in reverse)",
+            "Step 1: Associative; Step 2: Distributive; Step 3: Identity",
+            "Step 1: Commutative; Step 2: Associative; Step 3: Distributive",
+            "Step 1: Identity; Step 2: Inverse; Step 3: Distributive"
+          ],
+          answer: "Step 1: Distributive; Step 2: Commutative of Addition; Step 3: Combine like terms (Distributive in reverse)",
+          explanation: {
+            steps: [
+              "Step 1: 2(x + 4) + 3x → 2x + 8 + 3x uses the Distributive Property to expand",
+              "Step 2: 2x + 8 + 3x → 2x + 3x + 8 uses the Commutative Property of Addition to reorder terms",
+              "Step 3: 2x + 3x + 8 → 5x + 8 uses the Distributive Property in reverse (factoring): (2 + 3)x = 5x",
+              "Every algebraic manipulation is grounded in one of the named properties"
+            ],
+            tip: "Combining like terms is really the Distributive Property in reverse: 2x + 3x = (2+3)x = 5x."
           }
         }
       ],
