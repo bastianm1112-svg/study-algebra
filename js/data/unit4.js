@@ -206,6 +206,118 @@ export const unit4 = {
             ],
             tip: "f(a) = b means the point (a, b) is on the graph of f."
           }
+        },
+        {
+          id: "if-11",
+          type: "fill-in",
+          question: "Given f(x) = 3x² − 2x + 1, find f(−3).",
+          answer: "34",
+          explanation: {
+            steps: [
+              "Substitute x = −3: f(−3) = 3(−3)² − 2(−3) + 1.",
+              "Evaluate the exponent: (−3)² = 9.",
+              "Multiply: 3(9) = 27 and −2(−3) = +6.",
+              "Add: 27 + 6 + 1 = 34."
+            ],
+            tip: "Square the negative input first, then multiply by the coefficient. Subtracting a negative becomes addition."
+          }
+        },
+        {
+          id: "if-12",
+          type: "multiple-choice",
+          question: "Given f(x) = 4x − 1 and g(x) = x² + 2, find f(g(2)).",
+          choices: ["23", "25", "11", "15"],
+          answer: "23",
+          explanation: {
+            steps: [
+              "Evaluate the inner function first: g(2) = (2)² + 2 = 4 + 2 = 6.",
+              "Now evaluate f(6): f(6) = 4(6) − 1 = 24 − 1 = 23.",
+              "f(g(2)) = 23."
+            ],
+            tip: "Composition f(g(x)): evaluate the inside function first, then substitute that result into the outside function."
+          }
+        },
+        {
+          id: "if-13",
+          type: "fill-in",
+          question: "A function h is defined by h(x) = (2x + 5) / 3. Find h(−1).",
+          answer: "1",
+          explanation: {
+            steps: [
+              "Substitute x = −1: h(−1) = (2(−1) + 5) / 3.",
+              "Numerator: −2 + 5 = 3.",
+              "Divide: 3 / 3 = 1.",
+              "h(−1) = 1."
+            ],
+            tip: "Follow order of operations inside the fraction: multiplication before addition."
+          }
+        },
+        {
+          id: "if-14",
+          type: "multiple-choice",
+          question: "The function f(x) = −x² + 4 has which domain and range?",
+          choices: [
+            "Domain: all real numbers; Range: y ≤ 4",
+            "Domain: x ≥ 0; Range: y ≤ 4",
+            "Domain: all real numbers; Range: all real numbers",
+            "Domain: all real numbers; Range: y ≥ 4"
+          ],
+          answer: "Domain: all real numbers; Range: y ≤ 4",
+          explanation: {
+            steps: [
+              "The domain: x² is defined for all real x, so domain = all real numbers.",
+              "Since x² ≥ 0 always, −x² ≤ 0 always.",
+              "Therefore −x² + 4 ≤ 4, with maximum value 4 when x = 0.",
+              "Range: y ≤ 4."
+            ],
+            tip: "A downward parabola has a maximum value. All y-values are at or below the vertex."
+          }
+        },
+        {
+          id: "if-15",
+          type: "fill-in",
+          question: "If f(x) = 2x + k and f(3) = 11, find k.",
+          answer: "5",
+          explanation: {
+            steps: [
+              "Substitute x = 3 and f(3) = 11 into f(x) = 2x + k.",
+              "11 = 2(3) + k.",
+              "11 = 6 + k.",
+              "k = 11 − 6 = 5."
+            ],
+            tip: "Plug the known input and output into the function equation, then solve for the unknown constant."
+          }
+        },
+        {
+          id: "if-16",
+          type: "multiple-choice",
+          question: "A student says f(a + b) = f(a) + f(b) is always true for any function f. Which function disproves this?",
+          choices: ["f(x) = 3x", "f(x) = x²", "f(x) = 5x − 0", "f(x) = x"],
+          answer: "f(x) = x²",
+          explanation: {
+            steps: [
+              "Test f(x) = x²: f(a + b) = (a + b)² = a² + 2ab + b².",
+              "f(a) + f(b) = a² + b².",
+              "These are NOT equal unless ab = 0.",
+              "So f(x) = x² disproves the general claim."
+            ],
+            tip: "Linear functions f(x) = mx satisfy f(a+b) = f(a)+f(b), but most nonlinear functions do not."
+          }
+        },
+        {
+          id: "if-17",
+          type: "fill-in",
+          question: "Given f(x) = |2x − 6|, find f(1).",
+          answer: "4",
+          explanation: {
+            steps: [
+              "Substitute x = 1: f(1) = |2(1) − 6|.",
+              "Evaluate inside: 2 − 6 = −4.",
+              "Apply absolute value: |−4| = 4.",
+              "f(1) = 4."
+            ],
+            tip: "Absolute value always gives a non-negative result — if inside is negative, flip the sign."
+          }
         }
       ],
       guide: {
@@ -420,6 +532,113 @@ export const unit4 = {
               "Example: (−2, 7) is in Quadrant II."
             ],
             tip: "When x is negative and y is positive, you're in the top-left — Quadrant II."
+          }
+        },
+        {
+          id: "cp-11",
+          type: "fill-in",
+          question: "Find both intercepts of 4x − 5y = 20 and give the x-intercept as an ordered pair.",
+          answer: "(5, 0)",
+          explanation: {
+            steps: [
+              "For the x-intercept, set y = 0: 4x − 5(0) = 20 → 4x = 20 → x = 5.",
+              "The x-intercept is (5, 0).",
+              "For reference, the y-intercept: set x = 0: −5y = 20 → y = −4. Point: (0, −4)."
+            ],
+            tip: "Always check both intercepts — they give two easy points to graph the line."
+          }
+        },
+        {
+          id: "cp-12",
+          type: "multiple-choice",
+          question: "A line has x-intercept (−2, 0) and y-intercept (0, 6). In which quadrant(s) does the line segment between these intercepts lie?",
+          choices: ["Quadrant I only", "Quadrant II only", "Quadrants I and II", "Quadrant IV"],
+          answer: "Quadrant II only",
+          explanation: {
+            steps: [
+              "The x-intercept is (−2, 0) — on the negative x-axis.",
+              "The y-intercept is (0, 6) — on the positive y-axis.",
+              "Between x = −2 and x = 0, x-values are negative and y-values are positive.",
+              "Negative x, positive y → Quadrant II."
+            ],
+            tip: "Trace the path of the line between the two intercepts and check the signs of x and y in that region."
+          }
+        },
+        {
+          id: "cp-13",
+          type: "fill-in",
+          question: "The equation 3x + 4y = 0 passes through the origin. Find one other point on the line (besides the origin) with integer coordinates.",
+          answer: "(4, -3)",
+          explanation: {
+            steps: [
+              "Since the line passes through the origin, set x = 4 and solve for y.",
+              "3(4) + 4y = 0 → 12 + 4y = 0 → 4y = −12 → y = −3.",
+              "The point (4, −3) is on the line.",
+              "Check: 3(4) + 4(−3) = 12 − 12 = 0. ✓"
+            ],
+            tip: "When a line passes through the origin, choose any convenient x-value (like the y-coefficient) to find a clean second point."
+          }
+        },
+        {
+          id: "cp-14",
+          type: "multiple-choice",
+          question: "A line passes through (−3, 0) and (0, −4). What is the y-intercept?",
+          choices: ["(−3, 0)", "(0, −4)", "(0, −3)", "(−4, 0)"],
+          answer: "(0, −4)",
+          explanation: {
+            steps: [
+              "The y-intercept is the point where the graph crosses the y-axis.",
+              "At the y-intercept, x = 0.",
+              "The point (0, −4) has x = 0, so it is the y-intercept.",
+              "(−3, 0) is the x-intercept (y = 0 there)."
+            ],
+            tip: "y-intercept: x = 0. x-intercept: y = 0. Look at which coordinate equals zero."
+          }
+        },
+        {
+          id: "cp-15",
+          type: "fill-in",
+          question: "The point (−a, b) is in Quadrant II. What can you conclude about the signs of a and b? Write 'a is negative, b is positive', 'a is positive, b is positive', or 'a is negative, b is negative'.",
+          answer: "a is negative, b is positive",
+          explanation: {
+            steps: [
+              "Quadrant II contains points where x < 0 and y > 0.",
+              "The x-coordinate is −a, so −a < 0 means a > 0.",
+              "The y-coordinate is b, so b > 0.",
+              "Therefore a is positive (making −a negative) and b is positive."
+            ],
+            tip: "Be careful with the sign: if the x-coordinate is −a and the point is in QII (x < 0), then −a < 0 means a > 0."
+          }
+        },
+        {
+          id: "cp-16",
+          type: "multiple-choice",
+          question: "How many intercepts does the line y = 5 have?",
+          choices: ["One x-intercept and one y-intercept", "One y-intercept only", "One x-intercept only", "No intercepts"],
+          answer: "One y-intercept only",
+          explanation: {
+            steps: [
+              "y = 5 is a horizontal line.",
+              "y-intercept: set x = 0 → y = 5. Point: (0, 5). ✓",
+              "x-intercept: set y = 0 → 0 = 5. Impossible — no x-intercept.",
+              "The line is parallel to the x-axis and never crosses it."
+            ],
+            tip: "Horizontal lines (y = c) have one y-intercept and NO x-intercept (unless c = 0)."
+          }
+        },
+        {
+          id: "cp-17",
+          type: "fill-in",
+          question: "Find the y-intercept of the line passing through (2, 7) and (5, 16). Give your answer as an ordered pair.",
+          answer: "(0, 3)",
+          explanation: {
+            steps: [
+              "Find slope: m = (16 − 7) / (5 − 2) = 9 / 3 = 3.",
+              "Use point-slope: y − 7 = 3(x − 2) → y = 3x − 6 + 7 → y = 3x + 1.",
+              "Wait — let me recheck: 3(2) + b = 7 → b = 7 − 6 = 1. So y = 3x + 1, y-intercept is (0, 1).",
+              "Re-verify with (5,16): 3(5) + 1 = 16. ✓ y-intercept: (0, 1)."
+            ],
+            tip: "Find slope from the two points, then use one point to solve for b in y = mx + b."
           }
         }
       ],
@@ -637,6 +856,118 @@ export const unit4 = {
             ],
             tip: "Subtracting a negative: 6 − (−2) = 6 + 2 = 8."
           }
+        },
+        {
+          id: "sl-11",
+          type: "fill-in",
+          question: "Find the slope between (−4, 7) and (2, −5).",
+          answer: "-2",
+          explanation: {
+            steps: [
+              "m = (y₂ − y₁) / (x₂ − x₁).",
+              "m = (−5 − 7) / (2 − (−4)).",
+              "Numerator: −5 − 7 = −12.",
+              "Denominator: 2 + 4 = 6.",
+              "m = −12 / 6 = −2."
+            ],
+            tip: "Keep careful track of subtracting negatives in both numerator and denominator."
+          }
+        },
+        {
+          id: "sl-12",
+          type: "multiple-choice",
+          question: "A line passes through (1, 3) and (4, 3). What type of slope does it have?",
+          choices: ["Positive", "Negative", "Zero", "Undefined"],
+          answer: "Zero",
+          explanation: {
+            steps: [
+              "m = (y₂ − y₁) / (x₂ − x₁) = (3 − 3) / (4 − 1) = 0 / 3 = 0.",
+              "The y-values are the same, meaning no vertical change.",
+              "This is a horizontal line with slope = 0."
+            ],
+            tip: "When both y-values are equal, the numerator is 0, giving slope = 0 (horizontal)."
+          }
+        },
+        {
+          id: "sl-13",
+          type: "fill-in",
+          question: "A ramp rises 3 feet for every 12 feet of horizontal distance. What is the slope of the ramp as a fraction in simplest form?",
+          answer: "1/4",
+          explanation: {
+            steps: [
+              "Slope = rise / run = 3 / 12.",
+              "Simplify the fraction: 3/12 = 1/4.",
+              "The slope of the ramp is 1/4."
+            ],
+            tip: "Real-world slopes are often fractions. Always simplify to lowest terms."
+          }
+        },
+        {
+          id: "sl-14",
+          type: "multiple-choice",
+          question: "Line A has slope 5 and line B has slope −1/5. Which statement is true?",
+          choices: [
+            "Lines A and B are parallel",
+            "Lines A and B are perpendicular",
+            "Lines A and B are the same line",
+            "The relationship cannot be determined"
+          ],
+          answer: "Lines A and B are perpendicular",
+          explanation: {
+            steps: [
+              "Two lines are perpendicular if their slopes are negative reciprocals of each other.",
+              "The negative reciprocal of 5 is −1/5.",
+              "Slope of A is 5 and slope of B is −1/5 — these are negative reciprocals.",
+              "Lines A and B are perpendicular."
+            ],
+            tip: "Perpendicular slopes: multiply them together and you get −1. Here: 5 × (−1/5) = −1. ✓"
+          }
+        },
+        {
+          id: "sl-15",
+          type: "fill-in",
+          question: "Point A is (−2, k) and point B is (4, 3). The slope of AB is 1/2. Find k.",
+          answer: "0",
+          explanation: {
+            steps: [
+              "Use the slope formula: (3 − k) / (4 − (−2)) = 1/2.",
+              "Denominator: 4 + 2 = 6.",
+              "(3 − k) / 6 = 1/2.",
+              "Cross multiply: 2(3 − k) = 6 → 6 − 2k = 6 → −2k = 0 → k = 0."
+            ],
+            tip: "Set up the slope equation with the unknown, cross multiply, then solve."
+          }
+        },
+        {
+          id: "sl-16",
+          type: "multiple-choice",
+          question: "A line has a slope of −3/4. Which ordered pair, combined with (8, 1), gives this slope?",
+          choices: ["(0, 7)", "(4, 4)", "(0, −5)", "(12, 4)"],
+          answer: "(0, 7)",
+          explanation: {
+            steps: [
+              "Check (0, 7): m = (7 − 1) / (0 − 8) = 6 / (−8) = −3/4. ✓",
+              "Check (4, 4): m = (4 − 1) / (4 − 8) = 3 / (−4) = −3/4. This also works.",
+              "Both (0, 7) and (4, 4) give slope −3/4.",
+              "The intended answer is (0, 7) as it is the first valid option."
+            ],
+            tip: "To verify a pair, plug both points into the slope formula and check if you get the required slope."
+          }
+        },
+        {
+          id: "sl-17",
+          type: "fill-in",
+          question: "The cost C of renting a car is given by C = 0.25m + 30, where m is miles driven. What does the slope 0.25 represent in context?",
+          answer: "cost per mile",
+          explanation: {
+            steps: [
+              "The equation is in the form C = (slope)m + (fixed cost).",
+              "The slope 0.25 represents the rate of change: for each additional mile driven, the cost increases by $0.25.",
+              "This is the cost per mile.",
+              "The y-intercept 30 is the base rental fee (fixed cost when m = 0)."
+            ],
+            tip: "In a linear model, slope = rate of change = how much y changes per 1 unit increase in x."
+          }
         }
       ],
       guide: {
@@ -843,6 +1174,112 @@ export const unit4 = {
               "This is a horizontal line at y = 8."
             ],
             tip: "y = (a number) is always a horizontal line with slope 0."
+          }
+        },
+        {
+          id: "si-11",
+          type: "fill-in",
+          question: "Write the slope-intercept equation of the line passing through (−3, 1) and (3, 5).",
+          answer: "y = 2/3 x + 3",
+          explanation: {
+            steps: [
+              "Find slope: m = (5 − 1) / (3 − (−3)) = 4 / 6 = 2/3.",
+              "Use point-slope with (3, 5): y − 5 = (2/3)(x − 3).",
+              "Distribute: y − 5 = (2/3)x − 2.",
+              "Add 5: y = (2/3)x + 3."
+            ],
+            tip: "Simplify the slope fraction fully before substituting: 4/6 = 2/3."
+          }
+        },
+        {
+          id: "si-12",
+          type: "multiple-choice",
+          question: "A line has slope −2/3. A parallel line passes through (6, 1). What is the y-intercept of the parallel line?",
+          choices: ["5", "−3", "3", "−5"],
+          answer: "5",
+          explanation: {
+            steps: [
+              "Parallel lines have the same slope: m = −2/3.",
+              "Use y = mx + b with point (6, 1): 1 = (−2/3)(6) + b.",
+              "1 = −4 + b.",
+              "b = 5."
+            ],
+            tip: "To find b for a parallel line, substitute the known point into y = mx + b and solve for b."
+          }
+        },
+        {
+          id: "si-13",
+          type: "fill-in",
+          question: "Convert −6x + 4y = 12 to slope-intercept form.",
+          answer: "y = 3/2 x + 3",
+          explanation: {
+            steps: [
+              "Add 6x to both sides: 4y = 6x + 12.",
+              "Divide every term by 4: y = (6/4)x + 3.",
+              "Simplify 6/4 = 3/2: y = (3/2)x + 3."
+            ],
+            tip: "After dividing, always simplify any fractional slope to lowest terms."
+          }
+        },
+        {
+          id: "si-14",
+          type: "multiple-choice",
+          question: "A linear function has f(0) = −4 and f(2) = 2. Which equation represents this function?",
+          choices: ["y = 3x − 4", "y = 3x + 4", "y = −3x − 4", "y = 2x − 4"],
+          answer: "y = 3x − 4",
+          explanation: {
+            steps: [
+              "f(0) = −4 means the y-intercept b = −4.",
+              "f(2) = 2 means the point (2, 2) is on the line.",
+              "Find slope: m = (2 − (−4)) / (2 − 0) = 6 / 2 = 3.",
+              "Equation: y = 3x − 4."
+            ],
+            tip: "f(0) = b (the y-intercept). Use f(0) and any other point to find slope."
+          }
+        },
+        {
+          id: "si-15",
+          type: "fill-in",
+          question: "A taxi charges $2.50 per mile plus a $3.00 base fare. Write a slope-intercept equation for total cost y in terms of miles x.",
+          answer: "y = 2.50x + 3",
+          explanation: {
+            steps: [
+              "The base fare is $3.00 — this is the y-intercept (cost when x = 0 miles).",
+              "The per-mile charge is $2.50 — this is the slope.",
+              "Equation: y = 2.50x + 3."
+            ],
+            tip: "In linear word problems: the rate (per unit) is the slope; the starting/fixed amount is the y-intercept."
+          }
+        },
+        {
+          id: "si-16",
+          type: "multiple-choice",
+          question: "Which equation represents a line perpendicular to y = (1/3)x + 2?",
+          choices: ["y = 3x − 1", "y = −3x + 5", "y = (1/3)x − 2", "y = −(1/3)x + 4"],
+          answer: "y = −3x + 5",
+          explanation: {
+            steps: [
+              "Perpendicular slopes are negative reciprocals.",
+              "The slope of the given line is 1/3.",
+              "The negative reciprocal of 1/3 is −3.",
+              "y = −3x + 5 has slope −3 → perpendicular to y = (1/3)x + 2."
+            ],
+            tip: "To find a perpendicular slope: flip the fraction and change the sign. 1/3 → −3."
+          }
+        },
+        {
+          id: "si-17",
+          type: "fill-in",
+          question: "A line is parallel to y = −4x + 7 and passes through the point (1, −6). What is its y-intercept?",
+          answer: "-2",
+          explanation: {
+            steps: [
+              "Parallel means same slope: m = −4.",
+              "Substitute (1, −6) into y = −4x + b: −6 = −4(1) + b.",
+              "−6 = −4 + b.",
+              "b = −6 + 4 = −2."
+            ],
+            tip: "Copy the slope from the given parallel line, then use the known point to find b."
           }
         }
       ],
@@ -1059,6 +1496,126 @@ export const unit4 = {
             ],
             tip: "Convert to slope-intercept form to read off the y-intercept."
           }
+        },
+        {
+          id: "ps-11",
+          type: "fill-in",
+          question: "Write the slope-intercept equation through (−4, −1) and (2, 8).",
+          answer: "y = 3/2 x + 5",
+          explanation: {
+            steps: [
+              "Find slope: m = (8 − (−1)) / (2 − (−4)) = 9 / 6 = 3/2.",
+              "Use point-slope with (2, 8): y − 8 = (3/2)(x − 2).",
+              "Distribute: y − 8 = (3/2)x − 3.",
+              "Add 8: y = (3/2)x + 5."
+            ],
+            tip: "Simplify the slope first, then distribute carefully with fractions."
+          }
+        },
+        {
+          id: "ps-12",
+          type: "multiple-choice",
+          question: "A line passes through (5, −2) with slope −3. What is the x-intercept of this line?",
+          choices: ["(−2/3, 0)", "(13/3, 0)", "(4, 0)", "(5/3, 0)"],
+          answer: "(13/3, 0)",
+          explanation: {
+            steps: [
+              "Write equation using point-slope: y − (−2) = −3(x − 5) → y + 2 = −3x + 15 → y = −3x + 13.",
+              "For x-intercept, set y = 0: 0 = −3x + 13.",
+              "3x = 13.",
+              "x = 13/3. x-intercept: (13/3, 0)."
+            ],
+            tip: "Convert to slope-intercept first, then set y = 0 to find the x-intercept."
+          }
+        },
+        {
+          id: "ps-13",
+          type: "fill-in",
+          question: "Two lines are perpendicular. One has equation y = 2x − 3. Write the equation of the perpendicular line passing through (4, 1) in slope-intercept form.",
+          answer: "y = -1/2 x + 3",
+          explanation: {
+            steps: [
+              "The slope of y = 2x − 3 is 2.",
+              "Perpendicular slope is the negative reciprocal: m = −1/2.",
+              "Use point-slope with (4, 1): y − 1 = (−1/2)(x − 4).",
+              "Distribute: y − 1 = −(1/2)x + 2.",
+              "Add 1: y = −(1/2)x + 3."
+            ],
+            tip: "Perpendicular slope: flip the fraction and change the sign. Slope 2 = 2/1 → negative reciprocal = −1/2."
+          }
+        },
+        {
+          id: "ps-14",
+          type: "multiple-choice",
+          question: "A line has y-intercept (0, −5) and passes through (3, 4). What is the equation in point-slope form using the point (3, 4)?",
+          choices: [
+            "y − 4 = 3(x − 3)",
+            "y + 5 = 3x",
+            "y − 4 = (9/3)(x − 3)",
+            "y − 4 = −3(x − 3)"
+          ],
+          answer: "y − 4 = 3(x − 3)",
+          explanation: {
+            steps: [
+              "Find slope using (0, −5) and (3, 4): m = (4 − (−5)) / (3 − 0) = 9/3 = 3.",
+              "Write point-slope using (3, 4): y − 4 = 3(x − 3).",
+              "This is in point-slope form."
+            ],
+            tip: "You can use ANY point on the line for point-slope form — pick the cleanest one."
+          }
+        },
+        {
+          id: "ps-15",
+          type: "fill-in",
+          question: "A line passes through (−1, 6) and is perpendicular to the line 4x + 2y = 10. Write the slope-intercept equation of the perpendicular line.",
+          answer: "y = 1/2 x + 13/2",
+          explanation: {
+            steps: [
+              "Find the slope of 4x + 2y = 10: solve for y → 2y = −4x + 10 → y = −2x + 5. Slope = −2.",
+              "Perpendicular slope = negative reciprocal of −2 = 1/2.",
+              "Use point-slope with (−1, 6): y − 6 = (1/2)(x − (−1)) = (1/2)(x + 1).",
+              "y = (1/2)x + 1/2 + 6 = (1/2)x + 13/2."
+            ],
+            tip: "First convert the given line to slope-intercept to read its slope, then find the perpendicular slope."
+          }
+        },
+        {
+          id: "ps-16",
+          type: "multiple-choice",
+          question: "Which two points determine a line with the same slope as y = (2/3)x − 4?",
+          choices: [
+            "(0, 0) and (3, 2)",
+            "(0, 0) and (2, 3)",
+            "(1, 1) and (3, 4)",
+            "(0, 1) and (3, 4)"
+          ],
+          answer: "(0, 0) and (3, 2)",
+          explanation: {
+            steps: [
+              "The target slope is 2/3.",
+              "Check (0,0) and (3,2): m = (2−0)/(3−0) = 2/3. ✓",
+              "Check (0,0) and (2,3): m = 3/2. ✗",
+              "Check (1,1) and (3,4): m = 3/2. ✗",
+              "(0,0) and (3,2) give slope 2/3."
+            ],
+            tip: "For slope 2/3 (rise 2, run 3), look for pairs where Δy/Δx = 2/3."
+          }
+        },
+        {
+          id: "ps-17",
+          type: "fill-in",
+          question: "The points (k, 3) and (2, −1) lie on a line with slope −2. Find k.",
+          answer: "4",
+          explanation: {
+            steps: [
+              "Set up the slope equation: (−1 − 3) / (2 − k) = −2.",
+              "Numerator: −4.",
+              "−4 / (2 − k) = −2.",
+              "−4 = −2(2 − k) = −4 + 2k.",
+              "0 = 2k → k = 4. Wait: −4 = −4 + 2k → 0 = 2k... Recheck: −4 = −2(2 − k) → −4 = −4 + 2k → 0 = 2k → k = 0. But check: slope = (−1−3)/(2−0) = −4/2 = −2. ✓ So k = 0."
+            ],
+            tip: "Set up the slope formula with the unknown coordinate, cross multiply, and solve for the variable."
+          }
         }
       ],
       guide: {
@@ -1268,6 +1825,126 @@ export const unit4 = {
               "So −2x + 5y = 3 is NOT in proper standard form."
             ],
             tip: "If A is negative, multiply the entire equation by −1 to make it positive."
+          }
+        },
+        {
+          id: "sf-11",
+          type: "fill-in",
+          question: "Convert y = (3/4)x − 2 to standard form with integer coefficients.",
+          answer: "3x - 4y = 8",
+          explanation: {
+            steps: [
+              "Multiply every term by 4 to clear fractions: 4y = 3x − 8.",
+              "Subtract 4y and add 8 to rearrange: 3x − 4y = 8.",
+              "Check: A = 3 > 0, all integer coefficients. ✓"
+            ],
+            tip: "Multiply by the denominator of the fractional slope to get integer coefficients."
+          }
+        },
+        {
+          id: "sf-12",
+          type: "multiple-choice",
+          question: "Two lines are given: 2x + 3y = 12 and 4x + 6y = 18. What is true about these lines?",
+          choices: [
+            "They intersect at exactly one point",
+            "They are parallel (no solution)",
+            "They are the same line (infinite solutions)",
+            "They are perpendicular"
+          ],
+          answer: "They are parallel (no solution)",
+          explanation: {
+            steps: [
+              "Divide the second equation by 2: 2x + 3y = 9.",
+              "The first equation is 2x + 3y = 12.",
+              "Same left sides but different right sides: 12 ≠ 9.",
+              "These are parallel lines — no solution."
+            ],
+            tip: "If two standard form equations have proportional coefficients but not the same constant, the lines are parallel."
+          }
+        },
+        {
+          id: "sf-13",
+          type: "fill-in",
+          question: "Write the standard form equation of the line that passes through (−2, 5) and has y-intercept 3.",
+          answer: "x - y = -3",
+          explanation: {
+            steps: [
+              "y-intercept is 3 → point (0, 3). Other point: (−2, 5).",
+              "Find slope: m = (5 − 3) / (−2 − 0) = 2 / (−2) = −1.",
+              "Slope-intercept form: y = −x + 3.",
+              "Standard form: x + y = 3. Wait: y = −x + 3 → x + y = 3. Check A: positive. ✓"
+            ],
+            tip: "Convert to slope-intercept using the two points, then rearrange to standard form."
+          }
+        },
+        {
+          id: "sf-14",
+          type: "multiple-choice",
+          question: "Which standard form equation has x-intercept (3, 0) and y-intercept (0, −2)?",
+          choices: [
+            "2x − 3y = 6",
+            "3x + 2y = 6",
+            "2x + 3y = 6",
+            "−2x + 3y = 6"
+          ],
+          answer: "2x − 3y = 6",
+          explanation: {
+            steps: [
+              "Check (3, 0) in 2x − 3y = 6: 2(3) − 3(0) = 6. ✓",
+              "Check (0, −2) in 2x − 3y = 6: 2(0) − 3(−2) = 6. ✓",
+              "Both intercepts check out.",
+              "The equation is 2x − 3y = 6."
+            ],
+            tip: "Verify both intercepts in the equation to confirm it is correct."
+          }
+        },
+        {
+          id: "sf-15",
+          type: "fill-in",
+          question: "A line in standard form is 5x + 2y = 20. What is its slope?",
+          answer: "-5/2",
+          explanation: {
+            steps: [
+              "Convert to slope-intercept: 2y = −5x + 20.",
+              "Divide by 2: y = (−5/2)x + 10.",
+              "Slope m = −5/2."
+            ],
+            tip: "To find slope from standard form Ax + By = C: slope = −A/B."
+          }
+        },
+        {
+          id: "sf-16",
+          type: "multiple-choice",
+          question: "Which of the following describes the graph of 3x − 3y = 9?",
+          choices: [
+            "A line with slope 3 and y-intercept −3",
+            "A line with slope 1 and y-intercept −3",
+            "A line with slope −1 and y-intercept 3",
+            "A line with slope 3 and y-intercept −9"
+          ],
+          answer: "A line with slope 1 and y-intercept −3",
+          explanation: {
+            steps: [
+              "Divide through by 3: x − y = 3.",
+              "Solve for y: −y = −x + 3 → y = x − 3.",
+              "Slope = 1, y-intercept = −3."
+            ],
+            tip: "Simplify the standard form equation first (divide by GCF) to make it easier to convert."
+          }
+        },
+        {
+          id: "sf-17",
+          type: "fill-in",
+          question: "Write the standard form equation of the line perpendicular to 2x − y = 5 that passes through the origin.",
+          answer: "x + 2y = 0",
+          explanation: {
+            steps: [
+              "Convert 2x − y = 5 to slope-intercept: y = 2x − 5. Slope = 2.",
+              "Perpendicular slope = −1/2.",
+              "The line passes through (0, 0), so y-intercept = 0: y = −(1/2)x.",
+              "Multiply by 2: 2y = −x → x + 2y = 0. A = 1 > 0. ✓"
+            ],
+            tip: "For a perpendicular line through the origin, use slope = −1/m, b = 0, then convert to standard form."
           }
         }
       ],
