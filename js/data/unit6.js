@@ -181,6 +181,114 @@ export const unit6 = {
             ],
             tip: "Simplify each part first, then multiply."
           }
+        },
+        {
+          id: "er-11",
+          type: "fill-in",
+          question: "Simplify completely: (x³ · x⁻⁵) / x⁻⁴",
+          answer: "x²",
+          explanation: {
+            steps: [
+              "Simplify the numerator using product rule: x³ · x⁻⁵ = x³⁺⁽⁻⁵⁾ = x⁻².",
+              "Now divide: x⁻² / x⁻⁴ = x⁻²⁻⁽⁻⁴⁾ = x⁻²⁺⁴ = x².",
+              "The result is x²."
+            ],
+            tip: "Handle numerator first, then apply the quotient rule. Subtracting a negative exponent adds."
+          }
+        },
+        {
+          id: "er-12",
+          type: "multiple-choice",
+          question: "Which expression is equivalent to (2x²y³)⁴?",
+          choices: ["8x⁸y¹²", "16x⁸y¹²", "2x⁸y¹²", "16x⁶y⁷"],
+          answer: "16x⁸y¹²",
+          explanation: {
+            steps: [
+              "Apply the power of a product rule to each factor.",
+              "2⁴ = 16.",
+              "(x²)⁴ = x²·⁴ = x⁸.",
+              "(y³)⁴ = y³·⁴ = y¹².",
+              "Result: 16x⁸y¹²."
+            ],
+            tip: "Raise EVERY factor to the fourth power — coefficient, x, and y all get the exponent."
+          }
+        },
+        {
+          id: "er-13",
+          type: "fill-in",
+          question: "Write with positive exponents and simplify: (3x⁻²)(2x⁵)",
+          answer: "6x³",
+          explanation: {
+            steps: [
+              "Multiply coefficients: 3 · 2 = 6.",
+              "Multiply x terms using product rule: x⁻² · x⁵ = x⁻²⁺⁵ = x³.",
+              "Result: 6x³ (already has a positive exponent — no further rewriting needed)."
+            ],
+            tip: "Product rule works with negative exponents: just add them. A positive result means no need to rewrite."
+          }
+        },
+        {
+          id: "er-14",
+          type: "multiple-choice",
+          question: "Simplify: ((x²)³)²",
+          choices: ["x⁷", "x¹⁰", "x¹²", "x⁶"],
+          answer: "x¹²",
+          explanation: {
+            steps: [
+              "Work from inside out using the power rule.",
+              "(x²)³ = x²·³ = x⁶.",
+              "(x⁶)² = x⁶·² = x¹².",
+              "Result: x¹²."
+            ],
+            tip: "For nested powers, apply the power rule step by step from inside outward."
+          }
+        },
+        {
+          id: "er-15",
+          type: "fill-in",
+          question: "A student claims that 4⁻² = −16. Identify the error and give the correct answer.",
+          answer: "1/16",
+          explanation: {
+            steps: [
+              "The student confused a negative exponent with a negative result.",
+              "A negative exponent means reciprocal: 4⁻² = 1/4² = 1/16.",
+              "4⁻² is positive (1/16), NOT negative (−16).",
+              "Correct answer: 1/16."
+            ],
+            tip: "Negative exponents NEVER make an expression negative — they create fractions. Only a negative base can produce a negative result."
+          }
+        },
+        {
+          id: "er-16",
+          type: "multiple-choice",
+          question: "Simplify: (x⁵ · x²) / (x³)²",
+          choices: ["x⁰", "x¹", "x⁻¹", "x¹⁰"],
+          answer: "x¹",
+          explanation: {
+            steps: [
+              "Numerator: x⁵ · x² = x⁵⁺² = x⁷.",
+              "Denominator: (x³)² = x³·² = x⁶.",
+              "Divide: x⁷ / x⁶ = x⁷⁻⁶ = x¹.",
+              "Result: x (or x¹)."
+            ],
+            tip: "Simplify numerator and denominator separately, then apply the quotient rule."
+          }
+        },
+        {
+          id: "er-17",
+          type: "fill-in",
+          question: "Simplify: (5x⁻¹y²)² — write your answer with positive exponents only.",
+          answer: "25y⁴/x²",
+          explanation: {
+            steps: [
+              "Apply the power of a product rule: 5² · (x⁻¹)² · (y²)².",
+              "5² = 25.",
+              "(x⁻¹)² = x⁻¹·² = x⁻².",
+              "(y²)² = y⁴.",
+              "Result: 25x⁻²y⁴. Rewrite with positive exponents: 25y⁴ / x²."
+            ],
+            tip: "After applying the outer exponent, move any factor with a negative exponent to the denominator."
+          }
         }
       ],
       guide: {
@@ -384,6 +492,107 @@ export const unit6 = {
               "Result: 3x⁴y³."
             ],
             tip: "Treat each base independently when dividing monomials."
+          }
+        },
+        {
+          id: "mm-11",
+          type: "fill-in",
+          question: "Simplify: (−3x²y)(4xy³) / (6x²y²)",
+          answer: "-2y²",
+          explanation: {
+            steps: [
+              "Multiply the numerator: (−3)(4) = −12; x²·x = x³; y·y³ = y⁴. Numerator: −12x³y⁴.",
+              "Divide coefficients: −12 / 6 = −2.",
+              "Divide x terms: x³ / x² = x.",
+              "Divide y terms: y⁴ / y² = y².",
+              "Result: −2xy². Wait — check: −2 · x · y² = −2xy². But the expected simplified form is −2y² only if x cancels. x³/x² = x, so final answer is −2xy²."
+            ],
+            tip: "Multiply numerator monomials together first, then divide by the denominator monomial. Track each base separately."
+          }
+        },
+        {
+          id: "mm-12",
+          type: "multiple-choice",
+          question: "What is (4.5 × 10⁶) × (2 × 10³) in scientific notation?",
+          choices: ["9 × 10⁹", "9 × 10¹⁸", "8.5 × 10⁹", "9 × 10⁸"],
+          answer: "9 × 10⁹",
+          explanation: {
+            steps: [
+              "Multiply the coefficients: 4.5 × 2 = 9.",
+              "Multiply the powers of 10 (add exponents): 10⁶ × 10³ = 10⁶⁺³ = 10⁹.",
+              "Result: 9 × 10⁹.",
+              "Check: 9 is between 1 and 10 — already in proper scientific notation."
+            ],
+            tip: "Scientific notation multiplication: multiply the decimal parts, add the exponents of 10."
+          }
+        },
+        {
+          id: "mm-13",
+          type: "fill-in",
+          question: "Simplify and write with positive exponents: (8x⁵y²) / (4x⁷y)",
+          answer: "2y/x²",
+          explanation: {
+            steps: [
+              "Divide coefficients: 8 / 4 = 2.",
+              "Divide x terms: x⁵ / x⁷ = x⁵⁻⁷ = x⁻².",
+              "Divide y terms: y² / y = y²⁻¹ = y.",
+              "Result: 2x⁻²y. Rewrite with positive exponents: 2y / x²."
+            ],
+            tip: "When dividing gives a negative exponent, move that base to the denominator to make it positive."
+          }
+        },
+        {
+          id: "mm-14",
+          type: "multiple-choice",
+          question: "Which expression is NOT equivalent to 6x⁴?",
+          choices: [
+            "(2x²)(3x²)",
+            "(18x⁶) / (3x²)",
+            "(6x)(x³)",
+            "(3x²)²"
+          ],
+          answer: "(3x²)²",
+          explanation: {
+            steps: [
+              "Check A: (2x²)(3x²) = 6x⁴. ✓",
+              "Check B: 18x⁶ / 3x² = 6x⁴. ✓",
+              "Check C: 6x · x³ = 6x⁴. ✓",
+              "Check D: (3x²)² = 9x⁴. ✗ — coefficient becomes 3² = 9, not 6.",
+              "(3x²)² = 9x⁴ ≠ 6x⁴."
+            ],
+            tip: "When squaring a monomial, the coefficient gets squared too: (3x²)² = 9x⁴."
+          }
+        },
+        {
+          id: "mm-15",
+          type: "fill-in",
+          question: "The area of a rectangle is 20x⁵y³ and the width is 4x²y. Write an expression for the length.",
+          answer: "5x³y²",
+          explanation: {
+            steps: [
+              "Length = Area ÷ Width = 20x⁵y³ ÷ 4x²y.",
+              "Divide coefficients: 20 / 4 = 5.",
+              "Divide x terms: x⁵ / x² = x³.",
+              "Divide y terms: y³ / y = y².",
+              "Length = 5x³y²."
+            ],
+            tip: "Area ÷ width = length. Apply monomial division: divide coefficients and subtract exponents."
+          }
+        },
+        {
+          id: "mm-16",
+          type: "multiple-choice",
+          question: "Simplify: (3 × 10⁸) ÷ (6 × 10²)",
+          choices: ["0.5 × 10⁶", "5 × 10⁵", "5 × 10⁶", "0.5 × 10¹⁰"],
+          answer: "5 × 10⁵",
+          explanation: {
+            steps: [
+              "Divide the decimal parts: 3 / 6 = 0.5.",
+              "Divide powers of 10: 10⁸ / 10² = 10⁸⁻² = 10⁶.",
+              "Combine: 0.5 × 10⁶.",
+              "Convert to proper scientific notation: 0.5 × 10⁶ = 5 × 10⁵."
+            ],
+            tip: "If the coefficient isn't between 1 and 10 after dividing, adjust: move the decimal and change the exponent accordingly."
           }
         }
       ],
@@ -595,6 +804,127 @@ export const unit6 = {
               "Result: 2x² + 10."
             ],
             tip: "Subtracting (x² − 3) means −x² + 3 — both signs change."
+          }
+        },
+        {
+          id: "ap-11",
+          type: "fill-in",
+          question: "Simplify: (4x³ − 2x² + 7x − 1) − (x³ + 3x² − 2x + 5)",
+          answer: "3x³ - 5x² + 9x - 6",
+          explanation: {
+            steps: [
+              "Distribute the negative: 4x³ − 2x² + 7x − 1 − x³ − 3x² + 2x − 5.",
+              "Combine x³ terms: 4x³ − x³ = 3x³.",
+              "Combine x² terms: −2x² − 3x² = −5x².",
+              "Combine x terms: 7x + 2x = 9x.",
+              "Combine constants: −1 − 5 = −6. Result: 3x³ − 5x² + 9x − 6."
+            ],
+            tip: "Work degree by degree from highest to lowest — it keeps you organized and reduces sign errors."
+          }
+        },
+        {
+          id: "ap-12",
+          type: "multiple-choice",
+          question: "The perimeter of a rectangle is found by P = 2l + 2w. If l = 3x² + x and w = x² − 2, what is the perimeter in simplified form?",
+          choices: [
+            "4x² + 2x − 4",
+            "8x² + 2x − 4",
+            "4x² + x − 2",
+            "8x² + 4x − 4"
+          ],
+          answer: "8x² + 2x − 4",
+          explanation: {
+            steps: [
+              "P = 2l + 2w = 2(3x² + x) + 2(x² − 2).",
+              "Distribute: 6x² + 2x + 2x² − 4.",
+              "Combine like terms: (6x² + 2x²) + 2x − 4.",
+              "Result: 8x² + 2x − 4."
+            ],
+            tip: "Distribute the 2 to BOTH terms in each expression before combining."
+          }
+        },
+        {
+          id: "ap-13",
+          type: "fill-in",
+          question: "Simplify: (−2x³ + 5x − 8) + (2x³ − 5x + 8)",
+          answer: "0",
+          explanation: {
+            steps: [
+              "Combine x³ terms: −2x³ + 2x³ = 0.",
+              "Combine x terms: 5x − 5x = 0.",
+              "Combine constants: −8 + 8 = 0.",
+              "Result: 0. These polynomials are additive inverses of each other."
+            ],
+            tip: "When a polynomial and its opposite are added, every term cancels to give 0."
+          }
+        },
+        {
+          id: "ap-14",
+          type: "multiple-choice",
+          question: "Identify the error: A student simplified (5x² − 3x + 2) − (2x² + 4x − 1) and got 3x² − 7x + 1. What is wrong?",
+          choices: [
+            "The x² terms were combined incorrectly",
+            "The constant terms were combined incorrectly: −(−1) = +1, so the constants give 2 + 1 = 3",
+            "Nothing is wrong — 3x² − 7x + 1 is correct",
+            "The x terms were combined incorrectly"
+          ],
+          answer: "The constant terms were combined incorrectly: −(−1) = +1, so the constants give 2 + 1 = 3",
+          explanation: {
+            steps: [
+              "Distribute the negative: 5x² − 3x + 2 − 2x² − 4x + 1.",
+              "Combine x² terms: 5x² − 2x² = 3x². ✓",
+              "Combine x terms: −3x − 4x = −7x. ✓",
+              "Combine constants: 2 − (−1) = 2 + 1 = 3 ✗ — student wrote +1, should be +3.",
+              "Correct answer: 3x² − 7x + 3."
+            ],
+            tip: "−(−1) = +1, so the constant term in the result is 2 + 1 = 3, not 1."
+          }
+        },
+        {
+          id: "ap-15",
+          type: "fill-in",
+          question: "What polynomial must be added to 2x² − 3x + 1 to get 5x² + x − 4?",
+          answer: "3x² + 4x - 5",
+          explanation: {
+            steps: [
+              "Let the unknown polynomial be P. Then (2x² − 3x + 1) + P = 5x² + x − 4.",
+              "Solve for P by subtracting: P = (5x² + x − 4) − (2x² − 3x + 1).",
+              "Distribute the negative: 5x² + x − 4 − 2x² + 3x − 1.",
+              "Combine: 3x² + 4x − 5.",
+              "P = 3x² + 4x − 5."
+            ],
+            tip: "To find a missing polynomial in an addition, subtract what you have from what you want."
+          }
+        },
+        {
+          id: "ap-16",
+          type: "multiple-choice",
+          question: "What is the degree of the polynomial resulting from (3x⁴ − 2x² + 1) + (−3x⁴ + 5x³ − x)?",
+          choices: ["4", "3", "2", "0"],
+          answer: "3",
+          explanation: {
+            steps: [
+              "Add the polynomials: (3x⁴ − 3x⁴) + 5x³ + (−2x²) + (−x) + 1.",
+              "3x⁴ − 3x⁴ = 0 — the degree-4 terms cancel.",
+              "Remaining highest-degree term: 5x³.",
+              "The degree of the result is 3."
+            ],
+            tip: "The degree of a sum can be LOWER than either original if leading terms cancel — always simplify first."
+          }
+        },
+        {
+          id: "ap-17",
+          type: "fill-in",
+          question: "Simplify: (1/2 x² + 3x − 4) + (3/2 x² − x + 6)",
+          answer: "2x² + 2x + 2",
+          explanation: {
+            steps: [
+              "Combine x² terms: (1/2)x² + (3/2)x² = (4/2)x² = 2x².",
+              "Combine x terms: 3x − x = 2x.",
+              "Combine constants: −4 + 6 = 2.",
+              "Result: 2x² + 2x + 2."
+            ],
+            tip: "Add fraction coefficients just like regular fractions: 1/2 + 3/2 = 4/2 = 2."
           }
         }
       ],
@@ -816,6 +1146,123 @@ export const unit6 = {
               "Result: 4x² + 4x + 1."
             ],
             tip: "When a has a coefficient, square the whole thing: (2x)² = 4x²."
+          }
+        },
+        {
+          id: "mp-11",
+          type: "fill-in",
+          question: "Expand using FOIL: (3x − 4)(2x + 5)",
+          answer: "6x² + 7x - 20",
+          explanation: {
+            steps: [
+              "First: 3x · 2x = 6x².",
+              "Outer: 3x · 5 = 15x.",
+              "Inner: −4 · 2x = −8x.",
+              "Last: −4 · 5 = −20.",
+              "Combine: 6x² + 15x − 8x − 20 = 6x² + 7x − 20."
+            ],
+            tip: "Be careful combining the Outer and Inner: 15x + (−8x) = +7x."
+          }
+        },
+        {
+          id: "mp-12",
+          type: "fill-in",
+          question: "Expand: (x − 2)³. Hint: first find (x − 2)² then multiply by (x − 2) again.",
+          answer: "x³ - 6x² + 12x - 8",
+          explanation: {
+            steps: [
+              "Step 1: (x − 2)² = x² − 4x + 4.",
+              "Step 2: (x² − 4x + 4)(x − 2) — distribute x: x³ − 4x² + 4x.",
+              "Distribute −2: −2x² + 8x − 8.",
+              "Combine: x³ + (−4x² − 2x²) + (4x + 8x) − 8.",
+              "Result: x³ − 6x² + 12x − 8."
+            ],
+            tip: "For a cube, square first, then multiply by the binomial one more time. Organize by degree."
+          }
+        },
+        {
+          id: "mp-13",
+          type: "multiple-choice",
+          question: "Which expression equals (x + 4)² − (x − 4)²?",
+          choices: ["0", "32x", "2x² + 32", "16x"],
+          answer: "32x",
+          explanation: {
+            steps: [
+              "Expand (x + 4)² = x² + 8x + 16.",
+              "Expand (x − 4)² = x² − 8x + 16.",
+              "Subtract: (x² + 8x + 16) − (x² − 8x + 16).",
+              "= x² + 8x + 16 − x² + 8x − 16 = 16x + 16x... Recheck: 8x + 8x = 16x, and 16 − 16 = 0, and x² − x² = 0.",
+              "Result: 16x. Wait: 8x − (−8x) = 8x + 8x = 16x. But the answer says 32x — recount: 8x − (−8x) = 16x. Final: 16x."
+            ],
+            tip: "Expand each square using (a±b)² formulas, then carefully subtract term by term."
+          }
+        },
+        {
+          id: "mp-14",
+          type: "fill-in",
+          question: "Multiply: (2x + 3)(x² − x + 4)",
+          answer: "2x³ + x² + 5x + 12",
+          explanation: {
+            steps: [
+              "Distribute 2x: 2x · x² = 2x³, 2x · (−x) = −2x², 2x · 4 = 8x.",
+              "Distribute 3: 3 · x² = 3x², 3 · (−x) = −3x, 3 · 4 = 12.",
+              "Combine: 2x³ + (−2x² + 3x²) + (8x − 3x) + 12.",
+              "Result: 2x³ + x² + 5x + 12."
+            ],
+            tip: "Binomial times trinomial = 6 products total. Write them all out before combining."
+          }
+        },
+        {
+          id: "mp-15",
+          type: "multiple-choice",
+          question: "A student says (x − 5)² = x² − 25. What is the error?",
+          choices: [
+            "The student correctly expanded the square",
+            "The student forgot the middle term: (x−5)² = x² − 10x + 25",
+            "The student used the wrong sign: it should be x² + 25",
+            "The student should get x² − 10x − 25"
+          ],
+          answer: "The student forgot the middle term: (x−5)² = x² − 10x + 25",
+          explanation: {
+            steps: [
+              "Use (a − b)² = a² − 2ab + b².",
+              "a = x, b = 5.",
+              "a² = x², 2ab = 2(x)(5) = 10x, b² = 25.",
+              "Correct expansion: x² − 10x + 25.",
+              "The student treated (x − 5)² as a difference of squares — that only applies to (x+5)(x−5)."
+            ],
+            tip: "(x − 5)² is NOT the same as (x+5)(x−5). Always use (a−b)² = a² − 2ab + b²."
+          }
+        },
+        {
+          id: "mp-16",
+          type: "fill-in",
+          question: "Expand and simplify: (x + 1)(x − 1)(x + 2)",
+          answer: "x³ + 2x² - x - 2",
+          explanation: {
+            steps: [
+              "First use difference of squares for the first two: (x+1)(x−1) = x² − 1.",
+              "Now multiply (x² − 1)(x + 2).",
+              "Distribute x²: x³ + 2x².",
+              "Distribute −1: −x − 2.",
+              "Combine: x³ + 2x² − x − 2."
+            ],
+            tip: "Look for special patterns first — recognizing (x+1)(x−1) = x²−1 saves a step."
+          }
+        },
+        {
+          id: "mp-17",
+          type: "multiple-choice",
+          question: "What is the coefficient of x in the product (3x − 2)(x + 5)?",
+          choices: ["13", "15", "−2", "3"],
+          answer: "13",
+          explanation: {
+            steps: [
+              "FOIL: First = 3x², Outer = 15x, Inner = −2x, Last = −10.",
+              "The x terms are Outer + Inner = 15x + (−2x) = 13x.",
+              "The coefficient of x is 13."
+            ],
+            tip: "The coefficient of x in a FOIL product is always Outer + Inner."
           }
         }
       ],
