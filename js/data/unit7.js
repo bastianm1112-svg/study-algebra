@@ -192,6 +192,114 @@ export const unit7 = {
             ],
             tip: "After factoring out the GCF, check if the remaining factor can be simplified further."
           }
+        },
+        {
+          id: "gcf-11",
+          type: "multiple-choice",
+          question: "Factor by grouping: 6x³ - 4x² - 9x + 6",
+          choices: ["(3x - 2)(2x² - 3)", "(2x² + 3)(3x - 2)", "(3x + 2)(2x² - 3)", "(2x - 3)(3x² - 2)"],
+          answer: "(3x - 2)(2x² - 3)",
+          explanation: {
+            steps: [
+              "Group: (6x³ - 4x²) + (-9x + 6)",
+              "Factor each group: 2x²(3x - 2) + (-3)(3x - 2)",
+              "Both groups share (3x - 2): (3x - 2)(2x² - 3)",
+              "Check: (3x-2)(2x²-3) = 6x³ - 9x - 4x² + 6 = 6x³ - 4x² - 9x + 6 ✓"
+            ],
+            tip: "Factor a negative GCF from the second group when the signs require it."
+          }
+        },
+        {
+          id: "gcf-12",
+          type: "fill-in",
+          question: "Factor completely: 12x³y² - 18x²y³ + 6x²y²",
+          answer: "6x²y²(2x - 3y + 1)",
+          explanation: {
+            steps: [
+              "Find GCF: GCF(12,18,6) = 6; lowest x power = x²; lowest y power = y² → GCF = 6x²y²",
+              "Divide each term: 12x³y² ÷ 6x²y² = 2x; -18x²y³ ÷ 6x²y² = -3y; 6x²y² ÷ 6x²y² = 1",
+              "Write: 6x²y²(2x - 3y + 1)",
+              "Verify by distributing: 6x²y²·2x = 12x³y², 6x²y²·(-3y) = -18x²y³, 6x²y²·1 = 6x²y² ✓"
+            ],
+            tip: "With multiple variables, find the GCF for both variables simultaneously."
+          }
+        },
+        {
+          id: "gcf-13",
+          type: "fill-in",
+          question: "Factor by grouping: 10x³ + 15x² - 4x - 6",
+          answer: "(5x² - 2)(2x + 3)",
+          explanation: {
+            steps: [
+              "Group: (10x³ + 15x²) + (-4x - 6)",
+              "Factor each: 5x²(2x + 3) + (-2)(2x + 3)",
+              "Factor out (2x + 3): (2x + 3)(5x² - 2)",
+              "Check: (2x+3)(5x²-2) = 10x³ - 4x + 15x² - 6 = 10x³ + 15x² - 4x - 6 ✓"
+            ],
+            tip: "The GCF from the second pair (-2) is negative — keep track of signs."
+          }
+        },
+        {
+          id: "gcf-14",
+          type: "multiple-choice",
+          question: "A rectangular garden has area (20x³ - 30x²) square feet. If one side is 10x², what is the other side?",
+          choices: ["2x - 3", "2x² - 3x", "10x(2x - 3)", "20x - 30"],
+          answer: "2x - 3",
+          explanation: {
+            steps: [
+              "Area = length × width, so width = area ÷ length",
+              "Factor the area: 20x³ - 30x² = 10x²(2x - 3)",
+              "Divide by 10x²: (10x²)(2x - 3) ÷ 10x² = 2x - 3",
+              "The other side is 2x - 3"
+            ],
+            tip: "Factoring the GCF reveals the dimensions directly."
+          }
+        },
+        {
+          id: "gcf-15",
+          type: "fill-in",
+          question: "Factor by grouping: x²y + x²z - 3y - 3z",
+          answer: "(x² - 3)(y + z)",
+          explanation: {
+            steps: [
+              "Group: (x²y + x²z) + (-3y - 3z)",
+              "Factor each group: x²(y + z) + (-3)(y + z)",
+              "Factor out (y + z): (y + z)(x² - 3)",
+              "Check: (y+z)(x²-3) = x²y - 3y + x²z - 3z ✓"
+            ],
+            tip: "Sometimes the shared binomial contains two different variables — that's fine."
+          }
+        },
+        {
+          id: "gcf-16",
+          type: "multiple-choice",
+          question: "Factor completely: -6x³ + 9x² - 3x",
+          choices: ["-3x(2x² - 3x + 1)", "-3x(2x - 1)(x - 1)", "3x(-2x² + 3x - 1)", "Both A and B are correct"],
+          answer: "Both A and B are correct",
+          explanation: {
+            steps: [
+              "Factor GCF = -3x: -3x(2x² - 3x + 1)",
+              "Now factor 2x² - 3x + 1: ac = 2; factors of 2 adding to -3 → -1 and -2",
+              "2x² - x - 2x + 1 = x(2x-1) - 1(2x-1) = (2x-1)(x-1)",
+              "So -3x(2x-1)(x-1) is the fully factored form, equivalent to -3x(2x²-3x+1)"
+            ],
+            tip: "Always try to factor the remaining trinomial completely for a fully factored answer."
+          }
+        },
+        {
+          id: "gcf-17",
+          type: "fill-in",
+          question: "Factor by grouping: 2ax - 6bx + 3a - 9b",
+          answer: "(2x + 3)(a - 3b)",
+          explanation: {
+            steps: [
+              "Group: (2ax - 6bx) + (3a - 9b)",
+              "Factor each: 2x(a - 3b) + 3(a - 3b)",
+              "Factor out (a - 3b): (a - 3b)(2x + 3)",
+              "Check: (a-3b)(2x+3) = 2ax + 3a - 6bx - 9b ✓"
+            ],
+            tip: "Grouping works with multiple variable types — look for matching binomials after each group."
+          }
         }
       ],
       guide: {
@@ -412,6 +520,121 @@ export const unit7 = {
               "Check: 2(x+3)(x+4) = 2(x²+7x+12) = 2x²+14x+24 ✓"
             ],
             tip: "Always factor out the GCF before factoring the trinomial."
+          }
+        },
+        {
+          id: "tri-a1-11",
+          type: "fill-in",
+          question: "Factor completely: x² - 13x + 36",
+          answer: "(x - 4)(x - 9)",
+          explanation: {
+            steps: [
+              "c = 36 positive, b = -13 negative → both factors negative",
+              "List factor pairs of 36: (1,36), (2,18), (3,12), (4,9), (6,6)",
+              "Need pair summing to -13: (-4) + (-9) = -13 and (-4)(-9) = 36 ✓",
+              "Write: (x - 4)(x - 9)",
+              "Check: x² - 9x - 4x + 36 = x² - 13x + 36 ✓"
+            ],
+            tip: "List all factor pairs systematically to avoid missing the right combination."
+          }
+        },
+        {
+          id: "tri-a1-12",
+          type: "multiple-choice",
+          question: "Factor completely: 3x² - 3x - 36",
+          choices: ["3(x - 4)(x + 3)", "3(x + 4)(x - 3)", "(3x + 9)(x - 4)", "3(x² - x - 12)"],
+          answer: "3(x - 4)(x + 3)",
+          explanation: {
+            steps: [
+              "First factor out GCF = 3: 3(x² - x - 12)",
+              "Factor x² - x - 12: c = -12, b = -1 → opposite signs, larger negative",
+              "Need multiply to -12, add to -1: (-4)(3) = -12, (-4) + 3 = -1 ✓",
+              "Write: 3(x - 4)(x + 3)",
+              "Note: 3(x² - x - 12) is not fully factored — always factor the trinomial too"
+            ],
+            tip: "The answer 3(x² - x - 12) is incomplete — factor the trinomial inside as well."
+          }
+        },
+        {
+          id: "tri-a1-13",
+          type: "fill-in",
+          question: "The area of a rectangle is x² + 3x - 28 square units and one side is (x + 7) units. What is the length of the other side?",
+          answer: "x - 4",
+          explanation: {
+            steps: [
+              "Area = length × width, so other side = area ÷ (x + 7)",
+              "Factor x² + 3x - 28: need multiply to -28, add to 3",
+              "7 × (-4) = -28 and 7 + (-4) = 3 ✓ → (x + 7)(x - 4)",
+              "Divide by (x + 7): (x + 7)(x - 4) ÷ (x + 7) = x - 4",
+              "The other side is (x - 4) units"
+            ],
+            tip: "Factor the area expression first, then identify the matching factor."
+          }
+        },
+        {
+          id: "tri-a1-14",
+          type: "multiple-choice",
+          question: "Factor completely: x⁴ + 6x² - 27  (Hint: substitute u = x²)",
+          choices: ["(x² + 9)(x² - 3)", "(x² - 9)(x² + 3)", "(x² + 3)²", "(x² + 9)(x - 3)(x + 3)"],
+          answer: "(x² + 9)(x² - 3)",
+          explanation: {
+            steps: [
+              "Let u = x², so the expression becomes u² + 6u - 27",
+              "Factor u² + 6u - 27: need multiply to -27, add to 6",
+              "9 × (-3) = -27, 9 + (-3) = 6 ✓ → (u + 9)(u - 3)",
+              "Substitute back: (x² + 9)(x² - 3)",
+              "x² + 9 is a sum of squares (prime over reals); x² - 3 has no integer factors"
+            ],
+            tip: "If the exponents are 4 and 2, substitute u = x² to convert to a standard trinomial."
+          }
+        },
+        {
+          id: "tri-a1-15",
+          type: "fill-in",
+          question: "Factor completely: -x² + 5x + 24",
+          answer: "-(x - 8)(x + 3)",
+          explanation: {
+            steps: [
+              "Factor out -1 to make the leading coefficient positive: -(x² - 5x - 24)",
+              "Factor x² - 5x - 24: c = -24, b = -5 → need multiply to -24, add to -5",
+              "(-8)(3) = -24, (-8) + 3 = -5 ✓ → (x - 8)(x + 3)",
+              "Final answer: -(x - 8)(x + 3)",
+              "Check: -(x-8)(x+3) = -(x²+3x-8x-24) = -(x²-5x-24) = -x²+5x+24 ✓"
+            ],
+            tip: "When the leading coefficient is negative, factor out -1 first."
+          }
+        },
+        {
+          id: "tri-a1-16",
+          type: "fill-in",
+          question: "Factor completely: x² - 4x - 32",
+          answer: "(x - 8)(x + 4)",
+          explanation: {
+            steps: [
+              "c = -32, b = -4 → opposite signs, larger is negative",
+              "Factor pairs of 32: (1,32),(2,16),(4,8)",
+              "-8 and 4: (-8)(4) = -32, (-8) + 4 = -4 ✓",
+              "Write: (x - 8)(x + 4)",
+              "Check: x² + 4x - 8x - 32 = x² - 4x - 32 ✓"
+            ],
+            tip: "With larger constants, be methodical listing factor pairs."
+          }
+        },
+        {
+          id: "tri-a1-17",
+          type: "multiple-choice",
+          question: "Solve by factoring: x² + x - 30 = 0",
+          choices: ["x = 5 or x = -6", "x = -5 or x = 6", "x = 5 or x = 6", "x = -5 or x = -6"],
+          answer: "x = 5 or x = -6",
+          explanation: {
+            steps: [
+              "Factor x² + x - 30: need multiply to -30, add to 1",
+              "6 × (-5) = -30 and 6 + (-5) = 1 ✓ ... check: want positive 1, so try 6 and -5",
+              "Actually 6 + (-5) = 1 ✓, giving (x + 6)(x - 5) — wait: check signs",
+              "c=-30, b=+1: need 6 and -5 → (x+6)(x-5); set each to 0: x=-6 or x=5",
+              "Verify: (5)²+5-30=30-30=0 ✓; (-6)²+(-6)-30=36-6-30=0 ✓"
+            ],
+            tip: "Always verify both solutions by substituting back into the original equation."
           }
         }
       ],
@@ -636,6 +859,120 @@ export const unit7 = {
             ],
             tip: "If no factor pair of ac adds to b, the trinomial is prime."
           }
+        },
+        {
+          id: "tri-an1-11",
+          type: "fill-in",
+          question: "Factor: 8x² + 10x - 3",
+          answer: "(4x - 1)(2x + 3)",
+          explanation: {
+            steps: [
+              "a=8, b=10, c=-3; ac = -24",
+              "Find factors of -24 adding to 10: -2 × 12 = -24, -2 + 12 = 10 ✓",
+              "Rewrite: 8x² - 2x + 12x - 3",
+              "Group: 2x(4x - 1) + 3(4x - 1)",
+              "Factor: (4x - 1)(2x + 3)"
+            ],
+            tip: "Check: (4x-1)(2x+3) = 8x² + 12x - 2x - 3 = 8x² + 10x - 3 ✓"
+          }
+        },
+        {
+          id: "tri-an1-12",
+          type: "multiple-choice",
+          question: "Factor completely: 12x² - 22x + 8",
+          choices: ["2(3x - 2)(2x - 2)", "2(6x - 4)(x - 1)", "2(3x - 4)(2x - 1)", "4(3x - 2)(x - 1)"],
+          answer: "2(3x - 4)(2x - 1)",
+          explanation: {
+            steps: [
+              "Factor GCF = 2: 2(6x² - 11x + 4)",
+              "For 6x² - 11x + 4: ac = 24; find factors of 24 adding to -11: -3 × -8 = 24, -3 + (-8) = -11 ✓",
+              "Rewrite: 6x² - 3x - 8x + 4 → 3x(2x-1) - 4(2x-1)",
+              "Factor: (3x - 4)(2x - 1)",
+              "Final: 2(3x - 4)(2x - 1)"
+            ],
+            tip: "Always factor out the GCF first — it reduces the size of ac significantly."
+          }
+        },
+        {
+          id: "tri-an1-13",
+          type: "fill-in",
+          question: "Factor: 9x² - 6x + 1",
+          answer: "(3x - 1)²",
+          explanation: {
+            steps: [
+              "Check for perfect square trinomial: a term = (3x)², c term = (1)²",
+              "Middle check: 2·(3x)·(1) = 6x ✓, and it's negative",
+              "Pattern: a² - 2ab + b² = (a - b)²",
+              "Answer: (3x - 1)²",
+              "Check: (3x-1)² = 9x² - 6x + 1 ✓"
+            ],
+            tip: "Recognize perfect square trinomials even when a ≠ 1 — they save time over the AC method."
+          }
+        },
+        {
+          id: "tri-an1-14",
+          type: "fill-in",
+          question: "Factor completely: 6x³ + 11x² - 10x",
+          answer: "x(3x - 2)(2x + 5)",
+          explanation: {
+            steps: [
+              "Factor GCF = x: x(6x² + 11x - 10)",
+              "Factor 6x² + 11x - 10: ac = -60; need factors of -60 adding to 11",
+              "-4 × 15 = -60, -4 + 15 = 11 ✓",
+              "Rewrite: 6x² - 4x + 15x - 10 → 2x(3x-2) + 5(3x-2)",
+              "Final: x(3x - 2)(2x + 5)"
+            ],
+            tip: "Always factor out the monomial GCF first before applying the AC method."
+          }
+        },
+        {
+          id: "tri-an1-15",
+          type: "multiple-choice",
+          question: "Solve by factoring: 6x² - x - 2 = 0",
+          choices: ["x = 2/3 or x = -1/2", "x = -2/3 or x = 1/2", "x = 2/3 or x = 1/2", "x = -2/3 or x = -1/2"],
+          answer: "x = 2/3 or x = -1/2",
+          explanation: {
+            steps: [
+              "Factor 6x² - x - 2: ac = -12; factors of -12 adding to -1: -4 and 3",
+              "Rewrite: 6x² - 4x + 3x - 2 → 2x(3x-2) + 1(3x-2) = (3x-2)(2x+1)",
+              "Set each factor to 0: 3x - 2 = 0 → x = 2/3; 2x + 1 = 0 → x = -1/2",
+              "Check x=2/3: 6(4/9) - (2/3) - 2 = 8/3 - 2/3 - 6/3 = 0 ✓"
+            ],
+            tip: "When the leading coefficient a ≠ 1, solutions are often fractions — leave them as fractions."
+          }
+        },
+        {
+          id: "tri-an1-16",
+          type: "fill-in",
+          question: "Factor: 10x² - 3x - 1",
+          answer: "(5x + 1)(2x - 1)",
+          explanation: {
+            steps: [
+              "a=10, b=-3, c=-1; ac = -10",
+              "Find factors of -10 adding to -3: 2 × (-5) = -10, 2 + (-5) = -3 ✓",
+              "Rewrite: 10x² + 2x - 5x - 1",
+              "Group: 2x(5x + 1) - 1(5x + 1)",
+              "Factor: (5x + 1)(2x - 1)"
+            ],
+            tip: "Check: (5x+1)(2x-1) = 10x² - 5x + 2x - 1 = 10x² - 3x - 1 ✓"
+          }
+        },
+        {
+          id: "tri-an1-17",
+          type: "multiple-choice",
+          question: "A ball's height is modeled by -4t² + 8t + 5 feet, where t is time in seconds. Factor this expression to find when the height equals zero.",
+          choices: ["-(2t - 5)(2t + 1) = 0, so t = 5/2 or t = -1/2", "-(4t + 5)(t - 1) = 0, so t = -5/4 or t = 1", "-(2t + 5)(2t - 1) = 0, so t = -5/2 or t = 1/2", "-(4t - 5)(t + 1) = 0, so t = 5/4 or t = -1"],
+          answer: "-(2t - 5)(2t + 1) = 0, so t = 5/2 or t = -1/2",
+          explanation: {
+            steps: [
+              "Factor out -1: -(4t² - 8t - 5)",
+              "Factor 4t² - 8t - 5: ac = -20; factors of -20 adding to -8: 2 × (-10) = -20, 2 + (-10) = -8 ✓",
+              "Rewrite: 4t² + 2t - 10t - 5 → 2t(2t+1) - 5(2t+1) = (2t-5)(2t+1)",
+              "So -4t² + 8t + 5 = -(2t-5)(2t+1)",
+              "Set to 0: t = 5/2 or t = -1/2. Only t = 5/2 is valid (time ≥ 0)"
+            ],
+            tip: "In context problems, always check which solutions make physical sense."
+          }
         }
       ],
       guide: {
@@ -848,6 +1185,118 @@ export const unit7 = {
               "x² - 8x - 16: last term negative → can't be perfect square trinomial"
             ],
             tip: "For a perfect square trinomial: last term must be positive, and middle = 2·√(first)·√(last)."
+          }
+        },
+        {
+          id: "dos-11",
+          type: "fill-in",
+          question: "Factor completely: 50x⁴ - 72x²",
+          answer: "2x²(5x + 6)(5x - 6)",
+          explanation: {
+            steps: [
+              "Factor GCF = 2x²: 2x²(25x² - 36)",
+              "Recognize 25x² - 36 as difference of squares: (5x)² - 6²",
+              "Factor: (5x + 6)(5x - 6)",
+              "Final: 2x²(5x + 6)(5x - 6)",
+              "Check: 2x²(25x²-36) = 50x⁴ - 72x² ✓"
+            ],
+            tip: "Always factor the GCF first — it can reduce a difference of squares with variable coefficients."
+          }
+        },
+        {
+          id: "dos-12",
+          type: "multiple-choice",
+          question: "Factor completely: 81x⁴ - 16",
+          choices: ["(9x² + 4)(9x² - 4)", "(9x² + 4)(3x + 2)(3x - 2)", "(3x + 2)²(3x - 2)²", "(9x + 4)(9x - 4)"],
+          answer: "(9x² + 4)(3x + 2)(3x - 2)",
+          explanation: {
+            steps: [
+              "Recognize as difference of squares: (9x²)² ... wait, 81x⁴ = (9x²)² and 16 = 4²",
+              "First factor: (9x² + 4)(9x² - 4)",
+              "9x² + 4 is a sum of squares — prime over reals",
+              "9x² - 4 = (3x)² - 2² = (3x + 2)(3x - 2) — factor again!",
+              "Final: (9x² + 4)(3x + 2)(3x - 2)"
+            ],
+            tip: "Difference of squares can occur multiple times — always check if each factor factors further."
+          }
+        },
+        {
+          id: "dos-13",
+          type: "fill-in",
+          question: "Factor: 4x² + 20x + 25",
+          answer: "(2x + 5)²",
+          explanation: {
+            steps: [
+              "Check: 4x² = (2x)² and 25 = 5²",
+              "Check middle: 2·(2x)·5 = 20x ✓, and middle is positive",
+              "Pattern: a² + 2ab + b² = (a + b)²",
+              "Answer: (2x + 5)²"
+            ],
+            tip: "Quickly identify perfect square trinomials by checking if middle = 2·√(first coefficient)·√(last term)."
+          }
+        },
+        {
+          id: "dos-14",
+          type: "fill-in",
+          question: "Factor completely: 2x³ - 8x",
+          answer: "2x(x + 2)(x - 2)",
+          explanation: {
+            steps: [
+              "Factor GCF = 2x: 2x(x² - 4)",
+              "Factor x² - 4 as difference of squares: (x+2)(x-2)",
+              "Final: 2x(x + 2)(x - 2)",
+              "Check: 2x(x²-4) = 2x³ - 8x ✓"
+            ],
+            tip: "GCF first, then special patterns — never skip the GCF step."
+          }
+        },
+        {
+          id: "dos-15",
+          type: "multiple-choice",
+          question: "Solve by factoring: 9x² - 25 = 0",
+          choices: ["x = 5/3 or x = -5/3", "x = 3/5 or x = -3/5", "x = 25/9 or x = -25/9", "x = 5 or x = -5"],
+          answer: "x = 5/3 or x = -5/3",
+          explanation: {
+            steps: [
+              "Factor as difference of squares: (3x + 5)(3x - 5) = 0",
+              "Set each factor to 0: 3x + 5 = 0 → x = -5/3",
+              "3x - 5 = 0 → x = 5/3",
+              "Check x=5/3: 9(25/9) - 25 = 25 - 25 = 0 ✓"
+            ],
+            tip: "Solutions of (ax + b)(ax - b) = 0 are always x = ±b/a."
+          }
+        },
+        {
+          id: "dos-16",
+          type: "fill-in",
+          question: "Factor: 16x² - 40x + 25",
+          answer: "(4x - 5)²",
+          explanation: {
+            steps: [
+              "Check: 16x² = (4x)² and 25 = 5²",
+              "Check middle: 2·(4x)·5 = 40x ✓, middle is negative",
+              "Pattern: (a - b)² with a=4x, b=5",
+              "Answer: (4x - 5)²",
+              "Check: (4x-5)² = 16x² - 40x + 25 ✓"
+            ],
+            tip: "With larger coefficients, carefully verify that 2ab matches the middle term exactly."
+          }
+        },
+        {
+          id: "dos-17",
+          type: "multiple-choice",
+          question: "A square tile has area (x² + 14x + 49) cm². What is the side length?",
+          choices: ["(x + 7) cm", "(x + 14) cm", "(x + 7)² cm", "(2x + 14) cm"],
+          answer: "(x + 7) cm",
+          explanation: {
+            steps: [
+              "Area of a square = side², so side = √(area)",
+              "Factor x² + 14x + 49: check if perfect square trinomial",
+              "√(x²) = x, √49 = 7; 2·x·7 = 14x ✓ → (x+7)²",
+              "Side length = √((x+7)²) = x + 7",
+              "So the side length is (x + 7) cm"
+            ],
+            tip: "Recognizing a perfect square trinomial directly gives you the side length of a square."
           }
         }
       ],
